@@ -309,7 +309,7 @@ span.px-6.py-2.bg-white\/10.text-sm.uppercase.tracking-widest.rounded-3xl {
 
 @media (max-width: 768px) {
   .title-font { 
-  font-size: 46px;
+  font-size: 12vw;
 }
 
   h1 {
