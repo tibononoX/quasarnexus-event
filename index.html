@@ -283,11 +283,43 @@
     </div>
   </section>
 
-  <!-- CONTACT FORM -->
-  <section id="contact" class="py-16 bg-black border-t border-white/10 relative">
-    <div class="absolute left-0 top-0 bottom-0 flex pointer-events-none">
+  <!-- ABOUT US -->
+  <section id="about" class="py-20 bg-white/10 backdrop-blur-xl border-t border-white/10 relative">
+    <div class="absolute right-0 top-0 bottom-0 flex pointer-events-none">
       <img src="./src/quasarlogo.png" alt="Quasar Nexus" class="quasar-logo object-contain">
     </div>
+    
+    <div class="max-w-4xl mx-auto px-6 relative z-10">
+      <div class="mb-12">
+        <span class="px-6 py-2 bg-white/10 text-sm uppercase tracking-widest rounded-3xl border border-white/20" data-i18n="about_badge">About Us</span>
+        <h2 class="title-font text-5xl font-bold mt-8" data-i18n="about_title">About Quasar Nexus</h2>
+        <p class="text-xl mt-6 text-gray-300 max-w-2xl" data-i18n="about_desc">Our mission is to democratize access to space knowledge within our university by creating opportunities for learning, experimentation, and collaboration. We strive to inspire diverse talents, nurture innovation, and shape future pioneers in the space sector.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8 mt-12">
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all">
+          <div class="text-4xl mb-4">🎓</div>
+          <h3 class="text-xl font-semibold mb-3" data-i18n="about_learning">Learning & Education</h3>
+          <p class="text-gray-400" data-i18n="about_learning_desc">Sharing knowledge about astronomy, space exploration, and cutting-edge technologies</p>
+        </div>
+        
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all">
+          <div class="text-4xl mb-4">🔬</div>
+          <h3 class="text-xl font-semibold mb-3" data-i18n="about_innovation">Innovation & Research</h3>
+          <p class="text-gray-400" data-i18n="about_innovation_desc">Fostering experimentation and collaboration to push boundaries in space science</p>
+        </div>
+        
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all">
+          <div class="text-4xl mb-4">🚀</div>
+          <h3 class="text-xl font-semibold mb-3" data-i18n="about_future">Future Pioneers</h3>
+          <p class="text-gray-400" data-i18n="about_future_desc">Inspiring and nurturing the next generation of space industry leaders</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section id="contact" class="py-16 bg-black border-t border-white/10 relative">
     
     <div class="max-w-3xl mx-auto px-6 relative z-10">
       <div class="text-center mb-12">
@@ -444,7 +476,7 @@
         cta_title: "L'Univers vous appelle.<br>Répondrez-vous ?",
         cta_register: "INSCRIVEZ-VOUS →",
         cta_location: "Université Centrale Collective Lab (Polytech School) • Tunis, Tunisia",
-        cta_contact: "quasarnexus.uc@gmail.com • Live-streaming disponible",
+        cta_contact: "quasarnexus.uc@gmail.com • Live-streaming disponible pour les inscrits",
         location_title: "Lieu de l'Événement",
         location_heading: "Lieu de l'Événement",
         location_desc: "Rejoignez-nous à l'Université Centrale Collective Lab à Tunis",
@@ -456,8 +488,17 @@
         transport_title: "Comment s'y rendre",
         transport_desc: "Facilement accessible par les transports en commun",
         parking_desc: "Parking disponible sur le campus",
-        contact_title: "Contactez notre club !",
-        contact_desc: "Des questions ? Envoyez-nous un message et nous vous répondrons rapidement",
+        about_badge: "À propos",
+        about_title: "Quasar Nexus",
+        about_desc: "Notre mission est de démocratiser l'accès aux connaissances spatiales au sein de notre université en créant des opportunités d'apprentissage, d'expérimentation et de collaboration. Nous nous efforçons d'inspirer des talents divers, de cultiver l'innovation et de former les futurs pionniers du secteur spatial.",
+        about_learning: "Apprentissage & Éducation",
+        about_learning_desc: "Partager des connaissances sur l'astronomie, l'exploration spatiale et les technologies de pointe",
+        about_innovation: "Innovation & Recherche",
+        about_innovation_desc: "Favoriser l'expérimentation et la collaboration pour repousser les limites de la science spatiale",
+        about_future: "Futurs Pionniers",
+        about_future_desc: "Inspirer et former la prochaine génération de leaders de l'industrie spatiale",
+        contact_title: "Des questions ? Contactez nous !",
+        contact_desc: "Envoyez-nous un message et nous vous répondrons rapidement",
         instagram_text: "💬 Préférez discuter directement ?",
         instagram_link: "Suivez-nous sur Instagram",
         form_name: "Nom Complet",
@@ -508,7 +549,7 @@
         cta_title: "The Universe is calling.<br>Will you answer?",
         cta_register: "REGISTER →",
         cta_location: "Université Centrale Collective Lab (Polytech School) • Tunis, Tunisia",
-        cta_contact: "quasarnexus.uc@gmail.com • Live-streaming available",
+        cta_contact: "quasarnexus.uc@gmail.com • Live-streaming available for registered attendees",
         location_badge: "Venue",
         location_title: "Event Location",
         location_heading: "Event Location",
@@ -521,8 +562,17 @@
         transport_title: "How to get there?",
         transport_desc: "Easily accessible by public transport",
         parking_desc: "Parking available on campus",
-        contact_title: "Contact our club!",
-        contact_desc: "Have questions? Send us a message and we'll get back to you soon",
+        about_badge: "About Us",
+        about_title: "Quasar Nexus",
+        about_desc: "Our mission is to democratize access to space knowledge within our university by creating opportunities for learning, experimentation, and collaboration. We strive to inspire diverse talents, nurture innovation, and shape future pioneers in the space sector.",
+        about_learning: "Learning & Education",
+        about_learning_desc: "Sharing knowledge about astronomy, space exploration, and cutting-edge technologies",
+        about_innovation: "Innovation & Research",
+        about_innovation_desc: "Fostering experimentation and collaboration to push boundaries in space science",
+        about_future: "Future Pioneers",
+        about_future_desc: "Inspiring and nurturing the next generation of space industry leaders",
+        contact_title: "Have questions? Contact us!",
+        contact_desc: "Send us a message and we'll get back to you soon",
         instagram_text: "💬 Prefer chatting directly?",
         instagram_link: "Follow us on Instagram",
         form_name: "Full Name",
