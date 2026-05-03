@@ -67,7 +67,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: transparent url('./src/background.jpg') no-repeat center center;
+  background: transparent url('./src/assets/background.jpg') no-repeat center center;
   background-size: cover;
   opacity: 0.65;
   pointer-events: none;
