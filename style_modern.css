@@ -18,6 +18,12 @@ body {
   font-size: 80px;
 }
 
+.highlights {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
 .hero-bg {
   position: relative;
   overflow: hidden;
@@ -275,6 +281,7 @@ p {
 
 .space-y-6 > div {
   border-color: rgba(234, 51, 51, 0.3) !important;
+  border-width: 2px;
 }
 
 
