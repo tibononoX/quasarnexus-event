@@ -15,6 +15,7 @@ body {
   font-family: 'Space Grotesk', sans-serif; 
   letter-spacing: -0.01em;
   font-weight: 700;
+  font-size: 80px;
 }
 
 .hero-bg {
@@ -307,10 +308,14 @@ span.px-6.py-2.bg-white\/10.text-sm.uppercase.tracking-widest.rounded-3xl {
 
 
 @media (max-width: 768px) {
+  .title-font { 
+  font-size: 46px;
+}
+
   h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
-  
+
   h2 {
     font-size: 1.875rem;
   }
