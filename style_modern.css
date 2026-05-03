@@ -300,6 +300,11 @@ span.px-6.py-2.bg-white\/10.text-sm.uppercase.tracking-widest.rounded-3xl {
   text-align: center;
 }
 
+.quasar-logo {
+    margin-top: 0rem;
+    height: 16rem;
+  }
+
 
 @media (max-width: 768px) {
   h1 {
@@ -310,8 +315,8 @@ span.px-6.py-2.bg-white\/10.text-sm.uppercase.tracking-widest.rounded-3xl {
     font-size: 1.875rem;
   }
 
-  .quasar-logo img {
-    margin-top: 1rem;
+  .quasar-logo {
+    margin-top: 0rem;
     height: 6rem;
   }
 }
