@@ -213,6 +213,10 @@ h2 {
   border-color: #a855f7  !important;
 }
 
+.border-portrait-recorded {
+  border-color: rgb(239 68 68 / var(--tw-bg-opacity, 1))  !important;
+}
+
 .shadow-2xl {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 80px rgba(147, 51, 234, 0.1) !important;
 }

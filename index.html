@@ -205,7 +205,7 @@
             </div>
 
             <div
-              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              class="flex flex-col pl-6 flex-row gap-4 justify-center lg:justify-start"
             >
               <a
                 href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__igo3o5UNFpFQTRHR1ZXN0dMQU1MVDU5QUdYSVFXMC4u"
@@ -324,6 +324,552 @@
         </div>
       </div>
     </section>
+
+    <!-- ====================== PROGRAM OF THE DAY (Dropdown + Fully Translation Ready) ====================== -->
+    <details
+      id="program-accordion"
+      class="group max-w-4xl mx-auto px-4 md:px-6 pt-8"
+      open
+    >
+      <summary
+        class="flex items-center justify-between cursor-pointer list-none bg-white/10 hover:bg-white/15 backdrop-blur-2xl border border-white/30 rounded-3xl px-6 md:px-8 py-6 text-white transition-all duration-300"
+      >
+        <div class="flex items-center gap-3">
+          <span data-i18n="program_title" class="text-2xl font-bold"
+            >Program of the Day</span
+          >
+        </div>
+        <div class="flex items-center gap-2 text-blue-300">
+          <span
+            data-i18n="program_expand"
+            class="text-sm font-medium uppercase tracking-widest hidden md:inline"
+            >See full schedule</span
+          >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 transition-transform duration-300 group-open:rotate-180"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 9l-7 7-7-7"
+            />
+          </svg>
+        </div>
+      </summary>
+
+      <!-- Timeline content -->
+      <div
+        class="mt-8 bg-white/5 backdrop-blur-3xl border border-white/20 rounded-3xl p-4 md:p-6 shadow-2xl"
+      >
+        <p
+          data-i18n="program_subtitle"
+          class="text-center text-blue-300 mb-2 text-lg font-medium"
+        >
+          A day of inspiring talks, interactive workshops, and cosmic
+          connections
+        </p>
+        <p
+          data-i18n="program_subtitle2"
+          class="text-center text-zinc-400 mb-10 text-sm font-medium"
+        >
+          A day of inspiring talks, interactive workshops, and cosmic
+          connections
+        </p>
+
+        <!-- Vertical Timeline -->
+        <div class="relative space-y-8">
+          <!-- Event 1 -->
+          <div class="relative">
+            <div
+              class="absolute -left-[0.5rem] top-1.5 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_#3b82f6]"
+            ></div>
+            <div class="flex flex-col pl-6 flex-row gap-1">
+              <div
+                class="flex-shrink-0 font-mono text-2xl font-bold text-white border border-white/30 rounded-2xl text-center"
+                data-i18n="program_event_1_time"
+              >
+                2:30 PM
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_1_title"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  Mot d'ouverture
+                </h4>
+                <p
+                  data-i18n="program_event_1_subtitle"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  Welcomings by Dorra Saidi and Rania Chaouachi, Presidents of
+                  the Quasar Nexus Astronomy Club
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 2 -->
+          <div class="relative">
+            <div
+              class="absolute -left-[0.5rem] top-1.5 w-6 h-6 bg-emerald-300 rounded-full flex items-center justify-center shadow-[0_0_15px_#3b82f6]"
+            ></div>
+            <div class="flex flex-col pl-6 flex-row gap-1">
+              <div
+                class="flex-shrink-0 font-mono text-2xl font-bold text-white border border-white/30 rounded-2xl text-center"
+                data-i18n="program_event_2_time"
+              >
+                2:40 PM
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_2_title"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  M. Manuel Pimenta
+                </h4>
+                <p
+                  data-i18n="program_event_2_subtitle"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  CEO &amp; Founder, Virtual Moon
+                </p>
+                <span
+                  data-i18n="program_format_presential"
+                  class="text-center inline-block mt-4 px-6 py-2 bg-emerald-400/20 text-emerald-300 text-sm font-medium rounded-3xl border border-emerald-400/30"
+                  >Présentiel</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 3 -->
+          <div class="relative">
+            <div
+              class="absolute -left-[0.5rem] top-1.5 w-6 h-6 bg-violet-400 rounded-full flex items-center justify-center shadow-[0_0_15px_#3b82f6]"
+            ></div>
+            <div class="flex flex-col pl-6 flex-row gap-1">
+              <div
+                class="flex-shrink-0 font-mono text-2xl font-bold text-white border border-white/30 rounded-2xl text-center"
+                data-i18n="program_event_3_time"
+              >
+                3:00 PM
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_3_title"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  M. Jason Michaud
+                </h4>
+                <p
+                  data-i18n="program_event_3_subtitle"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  CEO &amp; Founder, Virtual Moon
+                </p>
+                <span
+                  data-i18n="program_format_online"
+                  class="text-center inline-block mt-4 px-6 py-2 bg-violet-400/20 text-violet-300 text-sm font-medium rounded-3xl border border-violet-400/30"
+                  >Online / Visio</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 4 -->
+          <div class="relative">
+            <div
+              class="absolute -left-[0.5rem] top-1.5 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_#3b82f6]"
+            ></div>
+            <div class="flex flex-col pl-6 flex-row gap-1">
+              <div
+                class="flex-shrink-0 font-mono text-2xl font-bold text-white border border-white/30 rounded-2xl text-center"
+                data-i18n="program_event_4_time"
+              >
+                3:20 PM
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_4_title"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  Scientific Posters
+                </h4>
+                <p
+                  data-i18n="program_event_4_subtitle"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  Scientific Posters
+                </p>
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_4_title2"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  VR Group 1
+                </h4>
+                <p
+                  data-i18n="program_event_4_subtitle2"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  Supervised by M. Fethi Kochbati, Virtual Moon ambassador
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 5 -->
+          <div class="relative">
+            <div
+              class="absolute -left-[0.5rem] top-1.5 w-6 h-6 bg-violet-400 rounded-full flex items-center justify-center shadow-[0_0_15px_#3b82f6]"
+            ></div>
+            <div class="flex flex-col pl-6 flex-row gap-1">
+              <div
+                class="flex-shrink-0 font-mono text-2xl font-bold text-white border border-white/30 rounded-2xl text-center"
+                data-i18n="program_event_5_time"
+              >
+                3:40 PM
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_5_title"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  Dr. Jeffrey A. Hoffman
+                </h4>
+                <p
+                  data-i18n="program_event_5_subtitle"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  Former NASA Astronaut & MIT Professor
+                </p>
+                <span
+                  data-i18n="program_format_online"
+                  class="text-center inline-block mt-4 px-6 py-2 bg-violet-400/20 text-violet-300 text-sm font-medium rounded-3xl border border-violet-400/30"
+                  >Online / Visio</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 6 -->
+          <div class="relative">
+            <div
+              class="absolute -left-[0.5rem] top-1.5 w-6 h-6 bg-violet-400 rounded-full flex items-center justify-center shadow-[0_0_15px_#3b82f6]"
+            ></div>
+            <div class="flex flex-col pl-6 flex-row gap-1">
+              <div
+                class="flex-shrink-0 font-mono text-2xl font-bold text-white border border-white/30 rounded-2xl text-center"
+                data-i18n="program_event_6_time"
+              >
+                4:00 PM
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_6_title"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  M. Andrew L. Chaikin
+                </h4>
+                <p
+                  data-i18n="program_event_6_subtitle"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  Writer, Historian of the Apollo Program, and author of A Man
+                  on the Moon
+                </p>
+                <span
+                  data-i18n="program_format_online"
+                  class="text-center inline-block mt-4 px-6 py-2 bg-violet-400/20 text-violet-300 text-sm font-medium rounded-3xl border border-violet-400/30"
+                  >Online / Visio</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 7 -->
+          <div class="relative">
+            <div
+              class="absolute -left-[0.5rem] top-1.5 w-6 h-6 bg-emerald-300 rounded-full flex items-center justify-center shadow-[0_0_15px_#3b82f6]"
+            ></div>
+            <div class="flex flex-col pl-6 flex-row gap-1">
+              <div
+                class="flex-shrink-0 font-mono text-2xl font-bold text-white border border-white/30 rounded-2xl text-center"
+                data-i18n="program_event_7_time"
+              >
+                4:20 PM
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_7_title"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  M. Riadh BEN NESSIB
+                </h4>
+                <p
+                  data-i18n="program_event_7_subtitle"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  Professor of Chief Scientific Supervision, City of Science in
+                  Tunis
+                </p>
+                <span
+                  data-i18n="program_format_presential"
+                  class="text-center inline-block mt-4 px-6 py-2 bg-emerald-400/20 text-emerald-300 text-sm font-medium rounded-3xl border border-emerald-400/30"
+                  >In-Person / On Stage</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 8: Pause -->
+          <div class="relative">
+            <div
+              class="absolute -left-[0.5rem] top-1.5 w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center shadow-[0_0_15px_#3b82f6]"
+            ></div>
+            <div class="flex flex-col pl-6 flex-row gap-1">
+              <div
+                class="flex-shrink-0 font-mono text-2xl font-bold text-amber-300 border border-white/30 rounded-2xl text-center"
+                data-i18n="program_event_8_time"
+              >
+                4:40 PM
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_8_title"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  Coffee Break
+                </h4>
+                <p
+                  data-i18n="program_event_8_subtitle"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  Have a coffee during our break
+                </p>
+                <span
+                  data-i18n="program_format_recorded"
+                  class="text-center inline-block mt-4 px-6 py-2 bg-red-400/20 text-red-300 text-sm font-medium rounded-3xl border border-red-400/30"
+                  >Online / Visio</span
+                >
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_8_title2"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  Coffee Break
+                </h4>
+                <p
+                  data-i18n="program_event_8_subtitle2"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  Have a coffee during our break
+                </p>
+                <span
+                  data-i18n="program_format_recorded"
+                  class="text-center inline-block mt-4 px-6 py-2 bg-red-400/20 text-red-300 text-sm font-medium rounded-3xl border border-red-400/30"
+                  >Online / Visio</span
+                >
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_8_title3"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  VR Group 2
+                </h4>
+                <p
+                  data-i18n="program_event_8_subtitle3"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  Supervised by M. Fethi Kochbati, Virtual Moon ambassador
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 9 -->
+          <div class="relative">
+            <div
+              class="absolute -left-[0.5rem] top-1.5 w-6 h-6 bg-emerald-300 rounded-full flex items-center justify-center shadow-[0_0_15px_#3b82f6]"
+            ></div>
+            <div class="flex flex-col pl-6 flex-row gap-1">
+              <div
+                class="flex-shrink-0 font-mono text-2xl font-bold text-white border border-white/30 rounded-2xl text-center"
+                data-i18n="program_event_9_time"
+              >
+                4:40 PM
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_9_title"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  Dr Sofien Kamoun
+                </h4>
+                <p
+                  data-i18n="program_event_9_subtitle"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  President, Astronomical Society of Tunisia
+                </p>
+                <span
+                  data-i18n="program_format_presential"
+                  class="text-center inline-block mt-4 px-6 py-2 bg-emerald-400/20 text-emerald-300 text-sm font-medium rounded-3xl border border-emerald-400/30"
+                  >Présentiel</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 10 -->
+          <div class="relative">
+            <div
+              class="absolute -left-[0.5rem] top-1.5 w-6 h-6 bg-violet-400 rounded-full flex items-center justify-center shadow-[0_0_15px_#3b82f6]"
+            ></div>
+            <div class="flex flex-col pl-6 flex-row gap-1">
+              <div
+                class="flex-shrink-0 font-mono text-2xl font-bold text-white border border-white/30 rounded-2xl text-center"
+                data-i18n="program_event_10_time"
+              >
+                5:20 PM
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_10_title"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  M. Abraham Babarinde
+                </h4>
+                <p
+                  data-i18n="program_event_10_subtitle"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  Industrial &amp; Production Engineer
+                </p>
+                <span
+                  data-i18n="program_format_online"
+                  class="text-center inline-block mt-4 px-6 py-2 bg-violet-400/20 text-violet-300 text-sm font-medium rounded-3xl border border-violet-400/30"
+                  >Online / Visio</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 11 -->
+          <div class="relative">
+            <div
+              class="absolute -left-[0.5rem] top-1.5 w-6 h-6 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_#3b82f6]"
+            ></div>
+            <div class="flex flex-col pl-6 flex-row gap-1">
+              <div
+                class="flex-shrink-0 font-mono text-2xl font-bold text-white border border-white/30 rounded-2xl text-center"
+                data-i18n="program_event_11_time"
+              >
+                5:30 PM
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_11_title"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  Closing Remarks
+                </h4>
+                <p
+                  data-i18n="program_event_11_subtitle"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  Welcomings by Dorra Saidi and Rania Chaouachi, Presidents of
+                  the Quasar Nexus Astronomy Club
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event 12 -->
+          <div class="relative">
+            <div
+              class="absolute -left-[0.5rem] top-1.5 w-6 h-6 bg-amber-400 rounded-full flex items-center justify-center shadow-[0_0_15px_#3b82f6]"
+            ></div>
+            <div class="flex flex-col pl-6 flex-row gap-1">
+              <div
+                class="flex-shrink-0 font-mono text-2xl font-bold text-amber-300 border border-white/30 rounded-2xl text-center"
+                data-i18n="program_event_12_time"
+              >
+                5:35 PM and beyond
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_12_title"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  Night Sky Workshop
+                </h4>
+                <p
+                  data-i18n="program_event_12_subtitle"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  Organized by Astronomical Society of Tunisia - SAT
+                </p>
+              </div>
+              <div
+                class="flex flex-col bg-white/10 backdrop-blur-3xl border border-white/30 rounded-2xl px-4 py-2 md:px-6 md:py-4"
+              >
+                <h4
+                  data-i18n="program_event_12_title2"
+                  class="text-center text-xl font-semibold text-white"
+                >
+                  VR Group 3
+                </h4>
+                <p
+                  data-i18n="program_event_12_subtitle2"
+                  class="text-center text-blue-300 mt-1"
+                >
+                  Supervised by M. Fethi Kochbati, Virtual Moon ambassador
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </details>
 
     <!-- SPEAKERS SECTION -->
     <section id="speakers" class="py-16 bg-transparent">
@@ -634,7 +1180,7 @@
           <div class="speaker-card border border-white/10 rounded-3xl p-6">
             <div class="flex justify-center mb-6">
               <div
-                class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online"
+                class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-recorded"
               >
                 <img
                   src="./src/assets/webp/alejandra.webp"
@@ -645,7 +1191,7 @@
             </div>
             <div class="text-center">
               <div
-                class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3"
+                class="inline-block bg-red-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3"
                 data-i18n="recorded_guest"
               >
                 Virtual Guest
@@ -663,7 +1209,7 @@
           <div class="speaker-card border border-white/10 rounded-3xl p-6">
             <div class="flex justify-center mb-6">
               <div
-                class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online"
+                class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-recorded"
               >
                 <img
                   src="./src/assets/webp/amoli.webp"
@@ -674,7 +1220,7 @@
             </div>
             <div class="text-center">
               <div
-                class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3"
+                class="inline-block bg-red-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3"
                 data-i18n="recorded_guest"
               >
                 Virtual Guest
