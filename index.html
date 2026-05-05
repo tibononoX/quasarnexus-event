@@ -130,23 +130,21 @@
             >
               SOMMET INTERNATIONAL SUR L'ACCESSIBILITÉ DE L'ESPACE
             </h1>
-            <p
-              class="text-center text-2xl md:text-2xl text-blue-200 max-w-lg mx-auto lg:mx-0 mb-2"
-            >
-              <span data-i18n="hero_date"
+            <p class="text-2xl md:text-2xl text-blue-200 mx-auto lg:mx-0 mb-2">
+              <span data-i18n="hero_date" class="text-center"
                 >6 mai 2026 • 14:00 • Tunis, Tunisie
               </span>
             </p>
             <div class="countdown-container mb-6 my-2 text-center">
-              <div
-                id="countdown"
-                class="grid grid-cols-4 gap-1 max-w-md mx-auto"
-              >
+              <div id="countdown" class="grid grid-cols-4 gap-1">
                 <div
                   class="flex flex-col justify-center items-center bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-2"
                 >
                   <div id="days" class="text-1xl font-bold text-white">00</div>
-                  <div class="text-xs uppercase tracking-widest text-blue-200">
+                  <div
+                    class="text-xs uppercase tracking-widest text-blue-200"
+                    data-i18n="count_day"
+                  >
                     Days
                   </div>
                 </div>
@@ -154,7 +152,10 @@
                   class="flex flex-col justify-center items-center bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl p-2"
                 >
                   <div id="hours" class="text-1xl font-bold text-white">00</div>
-                  <div class="text-xs uppercase tracking-widest text-blue-200">
+                  <div
+                    class="text-xs uppercase tracking-widest text-blue-200"
+                    data-i18n="count_hour"
+                  >
                     Hours
                   </div>
                 </div>
@@ -164,7 +165,10 @@
                   <div id="minutes" class="text-1xl font-bold text-white">
                     00
                   </div>
-                  <div class="text-xs uppercase tracking-widest text-blue-200">
+                  <div
+                    class="text-xs uppercase tracking-widest text-blue-200"
+                    data-i18n="count_minute"
+                  >
                     Minutes
                   </div>
                 </div>
@@ -174,10 +178,29 @@
                   <div id="seconds" class="text-1xl font-bold text-white">
                     00
                   </div>
-                  <div class="text-xs uppercase tracking-widest text-blue-200">
+                  <div
+                    class="text-xs uppercase tracking-widest text-blue-200"
+                    data-i18n="count_second"
+                  >
                     Seconds
                   </div>
                 </div>
+              </div>
+            </div>
+
+            <div
+              class="flex flex-wrap justify-center lg:justify-start gap-4 text-sm uppercase tracking-widest my-4"
+            >
+              <div
+                class="flex items-center gap-2 bg-white/10 px-5 py-2 rounded-2xl"
+              >
+                <span class="text-emerald-400"> ● </span>
+                <span data-i18n="hero_format"> EN PERSONNE & EN DIRECT </span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 px-5 py-2 rounded-2xl"
+              >
+                <span data-i18n="hero_lang"> Français & English </span>
               </div>
             </div>
 
@@ -192,21 +215,7 @@
                 <span data-i18n="btn_register"> S'inscrire </span>
                 <span class="text-3xl"> → </span>
               </a>
-              <div
-                class="flex flex-wrap justify-center lg:justify-start gap-4 text-sm uppercase tracking-widest my-1"
-              >
-                <div
-                  class="flex items-center gap-2 bg-white/10 px-5 py-2 rounded-2xl"
-                >
-                  <span class="text-emerald-400"> ● </span>
-                  <span data-i18n="hero_format"> EN PERSONNE & EN DIRECT </span>
-                </div>
-                <div
-                  class="flex items-center gap-2 bg-white/10 px-5 py-2 rounded-2xl"
-                >
-                  <span data-i18n="hero_lang"> Français & English </span>
-                </div>
-              </div>
+
               <a
                 onclick="
                   document
