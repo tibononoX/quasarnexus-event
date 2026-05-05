@@ -1,640 +1,1294 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./style_modern.css">
-  <link rel="stylesheet" href="./fonts.css">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style_modern.css" />
+    <link rel="stylesheet" href="./fonts.css" />
 
-  <meta name="google-site-verification" content="x11T4MPHy9aCKPwt7Fi7X3geHtunQcPyjPVEWAPWF9g" />
+    <meta
+      name="google-site-verification"
+      content="x11T4MPHy9aCKPwt7Fi7X3geHtunQcPyjPVEWAPWF9g"
+    />
 
-  <!-- Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
-  <!-- Tell Google to prefer your meta description -->
-  <meta name="robots" content="index, follow, max-snippet:-1">
+    <!-- Tell Google to prefer your meta description -->
+    <meta name="robots" content="index, follow, max-snippet:-1" />
 
-  <!-- Optional: Prevent auto-translation issues -->
-  <meta name="google" content="notranslate">
+    <!-- Optional: Prevent auto-translation issues -->
+    <meta name="google" content="notranslate" />
 
-  <!-- Primary Meta Tags -->
-  <title>International Summit on Space Accessibility • May 6, 2026 | Tunis, Tunisia</title>
-  <meta name="description" content="International Summit on Space Accessibility – May 6, 2026 in Tunis. Join former NASA Astronaut Dr. Jeffrey Hoffman and experts for conferences, VR workshops, citizen science & stargazing. In-person & live-streamed.">
-  <meta name="keywords" content="space summit, space accessibility, Quasar Nexus, astronomy event Tunisia, NASA astronaut, Jeffrey Hoffman, space conference Tunis, Virtual Moon, citizen science, stargazing Tunisia, space education">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Quasar Nexus Astronomy Club">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>
+      International Summit on Space Accessibility • May 6, 2026 | Tunis, Tunisia
+    </title>
+    <meta
+      name="description"
+      content="International Summit on Space Accessibility – May 6, 2026 in Tunis. Join former NASA Astronaut Dr. Jeffrey Hoffman and experts for conferences, VR workshops, citizen science & stargazing. In-person & live-streamed."
+    />
+    <meta
+      name="keywords"
+      content="space summit, space accessibility, Quasar Nexus, astronomy event Tunisia, NASA astronaut, Jeffrey Hoffman, space conference Tunis, Virtual Moon, citizen science, stargazing Tunisia, space education"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Quasar Nexus Astronomy Club" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Open Graph / Social Media (Facebook, LinkedIn, etc.) -->
-  <meta property="og:title" content="International Summit on Space Accessibility • May 6, 2026">
-  <meta property="og:description" content="An inspiring day with space professionals, VR workshops, citizen science, and stargazing. Hosted by Quasar Nexus at Université Centrale in Tunis.">
-  <meta property="og:type" content="event">
-  <meta property="og:url" content="https://tibononox.github.io/quasarnexus-event/">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:site_name" content="Quasar Nexus Event">
+    <!-- Open Graph / Social Media (Facebook, LinkedIn, etc.) -->
+    <meta
+      property="og:title"
+      content="International Summit on Space Accessibility • May 6, 2026"
+    />
+    <meta
+      property="og:description"
+      content="An inspiring day with space professionals, VR workshops, citizen science, and stargazing. Hosted by Quasar Nexus at Université Centrale in Tunis."
+    />
+    <meta property="og:type" content="event" />
+    <meta
+      property="og:url"
+      content="https://tibononox.github.io/quasarnexus-event/"
+    />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Quasar Nexus Event" />
 
-  <!-- Twitter / X Cards -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="International Summit on Space Accessibility – May 6, 2026">
-  <meta name="twitter:description" content="Former NASA astronaut + international experts | VR workshops | Citizen Science | Tunis, Tunisia">
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="International Summit on Space Accessibility – May 6, 2026"
+    />
+    <meta
+      name="twitter:description"
+      content="Former NASA astronaut + international experts | VR workshops | Citizen Science | Tunis, Tunisia"
+    />
 
-  <!-- Additional useful tags -->
-  <meta name="geo.region" content="TN-11">
-  <meta name="geo.placename" content="Tunis, Tunisia">
-  <meta name="event:start_date" content="2026-05-06T14:00:00+01:00">
-  <meta name="event:end_date" content="2026-05-06T21:00:00+01:00">
-</head>
+    <!-- Additional useful tags -->
+    <meta name="geo.region" content="TN-11" />
+    <meta name="geo.placename" content="Tunis, Tunisia" />
+    <meta name="event:start_date" content="2026-05-06T14:00:00+01:00" />
+    <meta name="event:end_date" content="2026-05-06T21:00:00+01:00" />
+  </head>
 
   <body class="bg-black text-white overflow-x-hidden">
+    <!-- Language Switcher -->
+    <div class="fixed top-6 right-6 z-50 flex gap-2">
+      <button
+        id="langEn"
+        class="lang-btn px-2 py-1 bg-white/10 hover:bg-white/20 rounded-lg font-semibold text-sm transition-all"
+      >
+        <img
+          src="./src/assets/webp/english.webp"
+          alt="English"
+          class="w-8 h-8 object-contain"
+        />
+      </button>
+      <button
+        id="langFr"
+        class="lang-btn active px-2 py-1 bg-white/20 hover:bg-white/30 rounded-lg font-semibold text-sm transition-all"
+      >
+        <img
+          src="./src/assets/webp/french.webp"
+          alt="French"
+          class="w-8 h-8 object-contain"
+        />
+      </button>
+    </div>
 
-  <!-- Language Switcher -->
-  <div class="fixed top-6 right-6 z-50 flex gap-2">
-    <button id="langEn" class="lang-btn px-2 py-1 bg-white/10 hover:bg-white/20 rounded-lg font-semibold text-sm transition-all"><img src="./src/assets/webp/english.webp" alt="English" class="w-8 h-8 object-contain"></button>
-    <button id="langFr" class="lang-btn active px-2 py-1 bg-white/20 hover:bg-white/30 rounded-lg font-semibold text-sm transition-all"><img src="./src/assets/webp/french.webp" alt="French" class="w-8 h-8 object-contain"></button>
-  </div>
+    <!-- HERO -->
+    <section class="hero-bg min-h-screen flex items-center relative">
+      <div class="star-field"></div>
+      <div class="max-w-6xl mx-auto px-6 pt-20 pb-16 relative z-10">
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+          <!-- Left content -->
+          <div class="flex-1 text-center lg:text-left">
+            <div
+              class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-xl px-6 py-3 rounded-3xl border border-white/20 mb-8"
+            >
+              <span class="text-3xl">
+                <img
+                  src="./src/assets/webp/quasarlogo-small.webp"
+                  class="inline-block w-16 object-contain"
+                  alt="Quasar Nexus "
+                />
+              </span>
+              Quasar Nexus Astronomy Club
+              <span class="uppercase text-sm tracking-[3px] font-semibold">
+                <img
+                  src="./src/assets/webp/Universite-Centrale-White.webp"
+                  class="inline-block w-64 object-contain"
+                  alt="Université Centrale"
+                />
+              </span>
+            </div>
+            <h1
+              class="title-font font-bold leading-none tracking-tighter mb-6"
+              data-i18n="hero_title"
+            >
+              SOMMET INTERNATIONAL SUR L'ACCESSIBILITÉ DE L'ESPACE
+            </h1>
+            <p
+              class="text-2xl md:text-3xl text-blue-200 max-w-lg mx-auto lg:mx-0 mb-8"
+            >
+              <span data-i18n="hero_date"
+                >6 mai 2026 • 14:00 • Tunis, Tunisie
+              </span>
+            </p>
+            <div
+              class="flex flex-wrap justify-center lg:justify-start gap-4 text-sm uppercase tracking-widest mb-10"
+            >
+              <div
+                class="flex items-center gap-2 bg-white/10 px-5 py-2 rounded-2xl"
+              >
+                <span class="text-emerald-400"> ● </span>
+                <span data-i18n="hero_format"> EN PERSONNE & EN DIRECT </span>
+              </div>
+              <div
+                class="flex items-center gap-2 bg-white/10 px-5 py-2 rounded-2xl"
+              >
+                <span data-i18n="hero_lang"> Français & English </span>
+              </div>
+            </div>
 
-  <!-- HERO -->
-  <section class="hero-bg min-h-screen flex items-center relative">
-    <div class="star-field"></div>
-    <div class="max-w-6xl mx-auto px-6 pt-20 pb-16 relative z-10">
-      <div class="flex flex-col lg:flex-row items-center gap-16">
-        
-        <!-- Left content -->
-        <div class="flex-1 text-center lg:text-left">
-          <div class="inline-flex items-center gap-3 bg-white/10 backdrop-blur-xl px-6 py-3 rounded-3xl border border-white/20 mb-8">
-            <span class="text-3xl"><img src="./src/assets/webp/quasarlogo-small.webp" class="inline-block w-16 object-contain" alt="Quasar Nexus "></span>
-            Quasar Nexus Astronomy Club
-            <span class="uppercase text-sm tracking-[3px] font-semibold"> <img src="./src/assets/webp/Universite-Centrale-White.webp" class="inline-block w-64 object-contain" alt="Université Centrale"></span>
-          </div>
-          
-          <h1 class="title-font font-bold leading-none tracking-tighter mb-6" data-i18n="hero_title">
-           SOMMET INTERNATIONAL<br>SUR L'ACCESSIBILITÉ<br>DE L'ESPACE
-          </h1>
-          
-          <p class="text-2xl md:text-3xl text-blue-200 max-w-lg mx-auto lg:mx-0 mb-8">
-            <span data-i18n="hero_date">6 mai 2026 • 14:00 • Tunis, Tunisie</span>
-          </p>
-          
-          <div class="flex flex-wrap justify-center lg:justify-start gap-4 text-sm uppercase tracking-widest mb-10">
-            <div class="flex items-center gap-2 bg-white/10 px-5 py-2 rounded-2xl"><span class="text-emerald-400">●</span> <span data-i18n="hero_format">EN PERSONNE & EN DIRECT</span></div>
-            <div class="flex items-center gap-2 bg-white/10 px-5 py-2 rounded-2xl"><span data-i18n="hero_lang">Français & English</span></div>
-          </div>
-          
-          <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__igo3o5UNFpFQTRHR1ZXN0dMQU1MVDU5QUdYSVFXMC4u" 
-               target="_blank"
-               class="text-center flex items-center justify-center button bg-gradient-to-r from-red-500 to-red-800 hover:from-red-600 hover:to-red-700 text-white font-semibold text-xl px-14 py-6 rounded-3xl flex items-center justify-center gap-3 transition-all hover:scale-105">
-              <span data-i18n="btn_register">S'inscrire</span>
-              <span class="text-3xl">→</span>
-            </a>
-            <a onclick="document.getElementById('speakers').scrollIntoView({ behavior: 'smooth' })" 
-               class="text-center flex items-center justify-center border-2 border-white/60 hover:bg-white/10 font-medium text-xl px-6 py-4 rounded-3xl transition-all">
-              <span data-i18n="btn_speakers">Rencontrer les Conférenciers</span>
-            </a>
-          </div>
-          
-          <p class="mt-8 text-gray-400 text-sm flex items-center justify-center lg:justify-start gap-2">
-            <span class="inline-block w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></span>
-            <span data-i18n="hero_hosted">Organisé par Quasar Nexus Astronomy Club • Université Centrale Collective Lab (Polytech)</span>
-          </p>
-        </div>
+            <div
+              class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+            >
+              <a
+                href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__igo3o5UNFpFQTRHR1ZXN0dMQU1MVDU5QUdYSVFXMC4u"
+                target="_blank"
+                class="text-center flex items-center justify-center button bg-gradient-to-r from-red-500 to-red-800 hover:from-red-600 hover:to-red-700 text-white font-semibold text-xl px-14 py-6 rounded-3xl gap-3 transition-all hover:scale-105"
+              >
+                <span data-i18n="btn_register"> S'inscrire </span>
+                <span class="text-3xl"> → </span>
+              </a>
+              <a
+                onclick="
+                  document
+                    .getElementById('speakers')
+                    .scrollIntoView({ behavior: 'smooth' })
+                "
+                class="text-center flex items-center justify-center border-2 border-white/60 hover:bg-white/10 font-medium text-xl px-6 py-4 rounded-3xl transition-all"
+              >
+                <span data-i18n="btn_speakers">
+                  Rencontrer les Conférenciers
+                </span>
+              </a>
+            </div>
 
-        <!-- Right visual (poster-inspired) -->
-        <div class="flex-1 relative hidden xl:block">
-          <div class="relative">
-            <img src="./src/assets/webp/JeffreyAlanHoffman.webp" alt="Jeffrey Alan Hoffman" 
-                 class="w-full rounded-3xl shadow-2xl rotate-[-3deg] scale-95">
-            <div class="absolute -bottom-6 -right-6 bg-white/10 border border-white/30 backdrop-blur-2xl rounded-3xl p-6 max-w-[320px] shadow-2xl">
-              <div class="flex items-center gap-4">
-                <div class="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl flex items-center justify-center text-4xl">🚀</div>
-                <div>
-                  <p class="font-semibold text-xl" data-i18n="hero_status">Former NASA Astronaut</p>
-                  <p class="text-red-400">Dr. Jeffrey A. Hoffman</p>
+            <p
+              class="mt-8 text-gray-400 text-sm flex items-center justify-center lg:justify-start gap-2"
+            >
+              <span
+                class="inline-block w-3 h-3 bg-yellow-400 rounded-full animate-pulse"
+              ></span>
+              <span data-i18n="hero_hosted">
+                Organisé par Quasar Nexus Astronomy Club • Université Centrale
+                Collective Lab (Polytech)
+              </span>
+            </p>
+          </div>
+
+          <!-- Right visual (poster-inspired) -->
+          <div class="flex-1 relative hidden xl:block">
+            <div class="relative">
+              <img
+                src="./src/assets/webp/JeffreyAlanHoffman.webp"
+                alt="Jeffrey Alan Hoffman"
+                class="w-full rounded-3xl shadow-2xl rotate-[-3deg] scale-95"
+              />
+              <div
+                class="absolute -bottom-6 -right-6 bg-white/10 border border-white/30 backdrop-blur-2xl rounded-3xl p-6 max-w-[320px] shadow-2xl"
+              >
+                <div class="flex items-center gap-4">
+                  <div
+                    class="w-16 h-16 bg-gradient-to-br from-orange-400 to-red-500 rounded-2xl flex items-center justify-center text-4xl"
+                  >
+                    🚀
+                  </div>
+                  <div>
+                    <p class="font-semibold text-xl" data-i18n="hero_status">
+                      Former NASA Astronaut
+                    </p>
+                    <p class="text-red-400">Dr. Jeffrey A. Hoffman</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-     <!-- QUICK HIGHLIGHTS -->
-  <section class="py-20 bg-white/10 backdrop-blur-xl">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
-      <div class="text-center highlights">
-        <div class="text-6xl mb-4">🎤</div>
-        <h4 class="text-2xl font-semibold mb-2" data-i18n="highlight_conferences">Conferences</h4>
-        <p class="text-gray-400" data-i18n="highlight_conferences_desc">With space professionals and a former NASA astronaut</p>
-      </div>
-      <div class="text-center highlights">
-        <div class="text-6xl mb-4">🥽</div>
-        <h4 class="text-2xl font-semibold mb-2" data-i18n="highlight_vr">Interactive VR Workshops</h4>
-        <p class="text-gray-400" data-i18n="highlight_vr_desc">Immerse yourself in space with Virtual Moon &amp; Stardust tech</p>
-      </div>
-      <div class="text-center highlights">
-        <div class="text-6xl mb-4">🛠</div>
-        <h4 class="text-2xl font-semibold mb-2" data-i18n="highlight_citscience">Citizen Science Workshops</h4>
-        <p class="text-gray-400" data-i18n="highlight_citscience_desc">Immerse yourself in space with Virtual Moon &amp; Stardust tech</p>
-      </div>
-      <div class="text-center highlights">
-        <div class="text-6xl mb-4">🔭</div>
-        <h4 class="text-2xl font-semibold mb-2" data-i18n="highlight_stargazing">Stargazing</h4>
-        <p class="text-gray-400" data-i18n="highlight_stargazing_desc">Real night-sky observation with the Astronomical Society of Tunisia</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SPEAKERS SECTION -->
-  <section id="speakers" class="py-16 bg-transparent">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-12">
-        <h2 class="title-font text-5xl font-bold mt-4" data-i18n="speakers_title">Inspiring Voices from Earth &amp; Beyond</h2>
-        <p class="text-xl mt-4 max-w-2xl mx-auto" data-i18n="speakers_desc">Meet the experts, explorers, and visionaries joining us in-person and online</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Speaker 3 -->
-        <div class="speaker-card border border-white/10 rounded-3xl p-6">
-          <div class="flex justify-center mb-6">
-            <div class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-presentiel">
-              <img src="./src/assets/webp/sofien.webp" alt="Dr. Sofien Kamoun" class="w-full h-full object-cover">
-            </div>
-          </div>
-          <div class="text-center">
-            <div class="inline-block bg-emerald-400 text-black text-xs font-bold px-4 py-1 rounded-3xl mb-3" data-i18n="in_person_guest">IN-PERSON • PRÉSENTIEL</div>
-            <h3 class="font-semibold text-2xl" data-i18n="speaker3_name">Dr. Sofien Kamoun, Tunisia</h3>
-            <p class="text-red-400 text-lg" data-i18n="speaker3_desc">President, Astronomical Society of Tunisia</p>
-            <p class="text-sm text-gray-400 mt-4" data-i18n="speaker3_bio">Leading Tunisian astronomer and passionate science communicator dedicated to bringing the cosmos closer to North Africa.</p>
-          </div>
+    <!-- QUICK HIGHLIGHTS -->
+    <section class="py-20 bg-white/10 backdrop-blur-xl">
+      <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+        <div class="text-center highlights">
+          <div class="text-6xl mb-4">🎤</div>
+          <h4
+            class="text-2xl font-semibold mb-2"
+            data-i18n="highlight_conferences"
+          >
+            Conferences
+          </h4>
+          <p class="text-gray-400" data-i18n="highlight_conferences_desc">
+            With space professionals and a former NASA astronaut
+          </p>
         </div>
-
-        <!-- Speaker 1 -->
-        <div class="speaker-card border border-white/10 rounded-3xl p-6">
-          <div class="flex justify-center mb-6">
-            <div class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-presentiel">
-              <img src="./src/assets/webp/manuel.webp" alt="Manuel Pimenta" class="w-full h-full object-cover">
-            </div>
-          </div>
-          <div class="text-center">
-            <div class="inline-block bg-emerald-400 text-black text-xs font-bold px-4 py-1 rounded-3xl mb-3" data-i18n="in_person_guest">IN-PERSON • PRÉSENTIEL</div>
-            <h3 class="font-semibold text-2xl" data-i18n="speaker1_name">Manuel Pimenta, USA</h3>
-            <p class="text-red-400 text-lg" data-i18n="speaker1_desc">CEO &amp; Founder, Virtual Moon</p>
-            <p class="text-sm text-gray-400 mt-4" data-i18n="speaker1_bio">Pioneer creating the most detailed VR model of the Moon — a fully immersive digital twin for STEM education and lunar exploration preparation.</p>
-          </div>
+        <div class="text-center highlights">
+          <div class="text-6xl mb-4">🥽</div>
+          <h4 class="text-2xl font-semibold mb-2" data-i18n="highlight_vr">
+            Interactive VR Workshops
+          </h4>
+          <p class="text-gray-400" data-i18n="highlight_vr_desc">
+            Dive into space with Virtual Moon
+          </p>
         </div>
-
-        <!-- Speaker 9 -->
-        <div class="speaker-card border border-white/10 rounded-3xl p-6">
-          <div class="flex justify-center mb-6">
-            <div class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online">
-              <img src="./src/assets/webp/philippe.webp" alt="Philippe Van Nedervelde" class="w-full h-full object-cover">
-            </div>
-          </div>
-          <div class="text-center">
-            <div class="inline-block bg-purple-500 text-black text-xs font-bold px-4 py-1 rounded-3xl mb-3" data-i18n="virtual_guest">Virtual Guest</div>
-            <h3 class="font-semibold text-2xl" data-i18n="speaker9_name">Philippe Van Nedervelde, USA</h3>
-            <p class="text-red-400 text-lg" data-i18n="speaker9_desc">VR Architect, Virtual Moon</p>
-            <p class="text-sm text-gray-400 mt-4" data-i18n="speaker9_bio">A futurist, transhumanist writer, activist and speaker. VR pioneer, former European Director of the Foresight Institute, and nanotechnology policy expert</p>
-          </div>
+        <div class="text-center highlights">
+          <div class="text-6xl mb-4">🛠</div>
+          <h4
+            class="text-2xl font-semibold mb-2"
+            data-i18n="highlight_citscience"
+          >
+            Citizen Science Workshops
+          </h4>
+          <p class="text-gray-400" data-i18n="highlight_citscience_desc">
+            Immerse yourself in space with Virtual Moon &amp; Stardust tech
+          </p>
         </div>
-
-        <!-- Speaker 6 -->
-        <div class="speaker-card border border-white/10 rounded-3xl p-6">
-          <div class="flex justify-center mb-6">
-            <div class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online">
-              <img src="./src/assets/webp/hoffman.webp" alt="Dr. Jeffrey A. Hoffman" class="w-full h-full object-cover">
-            </div>
-          </div>
-          <div class="text-center">
-            <div class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3" data-i18n="virtual_guest">Virtual Guest</div>
-            <h3 class="font-semibold text-2xl">Dr. Jeffrey A. Hoffman, USA</h3>
-            <p class="text-red-400 text-lg" data-i18n="speaker6_desc">Former NASA Astronaut &amp; MIT Professor</p>
-            <p class="text-sm text-gray-400 mt-4" data-i18n="speaker6_bio">Veteran of five Space Shuttle missions, including the first Hubble Space Telescope repair. Professor of Aeronautics &amp; Astronautics at MIT.</p>
-          </div>
-        </div>
-
-           <!-- Speaker 5 -->
-        <div class="speaker-card border border-white/10 rounded-3xl p-6">
-          <div class="flex justify-center mb-6">
-            <div class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online">
-              <img src="./src/assets/webp/andrew.webp" alt="Andrew L. Chaikin" class="w-full h-full object-cover">
-            </div>
-          </div>
-          <div class="text-center">
-            <div class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3" data-i18n="virtual_guest">Virtual Guest</div>
-            <h3 class="font-semibold text-2xl" data-i18n="speaker5_name">Andrew L. Chaikin, USA</h3>
-            <p class="text-red-400 text-lg" data-i18n="speaker5_desc">Renowned Apollo Historian &amp; Author</p>
-            <p class="text-sm text-gray-400 mt-4" data-i18n="speaker5_bio">Author of the definitive book <span class="italic">"A Man on the Moon"</span>. One of the world's leading historians of the Apollo program.</p>
-          </div>
-        </div>
-
-           <!-- Speaker 2 -->
-        <div class="speaker-card border border-white/10 rounded-3xl p-6">
-          <div class="flex justify-center mb-6">
-            <div class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online">
-              <img src="./src/assets/webp/jason.webp" alt="Jason Michaud" class="w-full h-full object-cover">
-            </div>
-          </div>
-          <div class="text-center">
-            <div class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3" data-i18n="virtual_guest">Virtual Guest</div>
-            <h3 class="font-semibold text-2xl" data-i18n="speaker2_name">Jason Michaud, Canada</h3>
-            <p class="text-red-400 text-lg" data-i18n="speaker2_desc">CEO & Founder, Stardust</p>
-            <p class="text-sm text-gray-400 mt-4" data-i18n="speaker2_bio">Leader of global initiatives in space education, innovation, and workforce development. Making space accessible to all dreamers.</p>
-          </div>
-        </div>
-        
-        <!-- Speaker 4 -->
-        <div class="speaker-card border border-white/10 rounded-3xl p-6">
-          <div class="flex justify-center mb-6">
-            <div class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online">
-              <img src="./src/assets/webp/abraham.webp" alt="Abraham Oludare" class="w-full h-full object-cover">
-            </div>
-          </div>
-          <div class="text-center">
-            <div class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3" data-i18n="virtual_guest">Virtual Guest</div>
-            <h3 class="font-semibold text-2xl" data-i18n="speaker4_name">Abraham Babarinde, Nigeria</h3>
-            <p class="text-red-400 text-lg" data-i18n="speaker4_desc">Industrial &amp; Production Engineer</p>
-            <p class="text-sm text-gray-400 mt-4" data-i18n="speaker4_bio">Expert in industrial engineering contributing innovative perspectives on the practical challenges of space accessibility and production systems.</p>
-          </div>
-        </div>
-
-    </div>
-  </section>
-
-  <!-- RECORDED PRESENTATIONS -->
-  <section class="py-16 bg-transparent border-t border-white/10">
-    <div class="max-w-7xl mx-auto px-4">
-      <div class="text-center mb-12">
-        <h2 class="title-font text-5xl font-bold mt-4" data-i18n="recorded_title">Recorded Presentations</h2>
-        <p class="text-xl mt-4 max-w-2xl mx-auto" data-i18n="recorded_desc">Special featured presentations available as recordings</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        
-        <!-- Speaker 7 -->
-        <div class="speaker-card border border-white/10 rounded-3xl p-6">
-          <div class="flex justify-center mb-6">
-            <div class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online">
-              <img src="./src/assets/webp/alejandra.webp" alt="Alejandra Islas" class="w-full h-full object-cover">
-            </div>
-          </div>
-          <div class="text-center">
-            <div class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3" data-i18n="recorded_guest">Virtual Guest</div>
-            <h3 class="font-semibold text-2xl" data-i18n="speaker7_name">Alejandra Islas, Mexico</h3>
-            <p class="text-red-400 text-lg" data-i18n="speaker7_desc">STEM Educator &amp; Space Education Advocate</p>
-          </div>
-        </div>
-
-        <!-- Speaker 8 -->
-        <div class="speaker-card border border-white/10 rounded-3xl p-6">
-          <div class="flex justify-center mb-6">
-            <div class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online">
-              <img src="./src/assets/webp/amoli.webp" alt="Amoli Kakkar" class="w-full h-full object-cover">
-            </div>
-          </div>
-          <div class="text-center">
-            <div class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3" data-i18n="recorded_guest">Virtual Guest</div>
-            <h3 class="font-semibold text-2xl" data-i18n="speaker8_name">Amoli Kakkar, India</h3>
-            <p class="text-red-400 text-lg" data-i18n="speaker8_desc">AAVSO Observer, Citizen Scientist, Member of SA Citizen Science GROUP</p>
-          </div>
-        </div>
-
-    </div>
-  </section>
-
-  <!-- WORKSHOPS -->
-  <section id="workshops" class="py-16 bg-transparent border-t border-white/10">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-12">
-        <h2 class="title-font text-5xl font-bold mt-4" data-i18n="workshops_title">Hands-On Workshops</h2>
-        <p class="text-xl mt-4 max-w-2xl mx-auto" data-i18n="workshops_desc">Immersive learning experiences designed to explore space accessibility</p>
-      </div>
-
-      <!-- On-Site Workshops -->
-      <div class="mb-16">
-        <h3 class="text-2xl font-bold mb-8 text-blue-400" data-i18n="onsite_workshops">On-Site Workshops</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          
-          <!-- Workshop 1: Nightsky Stargazing -->
-          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 hover:border-white/40 transition-all">
-            <div class="mb-6">
-              <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-4 border border-white/30">
-                <span class="text-4xl"><img src="./src/assets/webp/partner1.webp" alt="Astronomical Society of Tunisia - SAT" class="h-16 object-contain"></span>
-              </div>
-              <h4 class="text-2xl font-bold" data-i18n="workshop1_title">Nightsky Stargazing</h4>
-              <p class="text-gray-400 text-sm" data-i18n="workshop1_org">Organized by Astronomical Society of Tunisia - SAT</p>
-            </div>
-            <p class="text-gray-300 mb-6" data-i18n="workshop1_desc">Explore the night sky through telescopes and learn constellation identification from expert astronomers.</p>
-            <div class="flex items-center gap-2 text-sm text-emerald-400">
-              <span>●</span>
-              <span data-i18n="onsite">In-Person</span>
-            </div>
-          </div>
-
-          <!-- Workshop 2: Virtual Reality Moon Exploration -->
-          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-8 hover:border-white/40 transition-all">
-            <div class="mb-6">
-              <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center mb-4 border border-white/30">
-                <span class="text-4xl"><img src="./src/assets/webp/partner5.webp" alt="Virtual Moon" class="h-16 object-contain"></span>
-              </div>
-              <h4 class="text-2xl font-bold" data-i18n="workshop2_title">VR Moon Exploration</h4>
-              <p class="text-gray-400 text-sm" data-i18n="workshop2_org">Organized by Virtual Moon</p>
-            </div>
-            <p class="text-gray-300 mb-6" data-i18n="workshop2_desc">Experience an immersive VR journey across the lunar surface and prepare for future moon missions.</p>
-            <div class="flex items-center gap-2 text-sm text-emerald-400">
-              <span>●</span>
-              <span data-i18n="onsite">In-Person</span>
-            </div>
-          </div>
+        <div class="text-center highlights">
+          <div class="text-6xl mb-4">🔭</div>
+          <h4
+            class="text-2xl font-semibold mb-2"
+            data-i18n="highlight_stargazing"
+          >
+            Stargazing
+          </h4>
+          <p class="text-gray-400" data-i18n="highlight_stargazing_desc">
+            Real night-sky observation with the Astronomical Society of Tunisia
+          </p>
         </div>
       </div>
+    </section>
 
-      <!-- Online Workshop -->
-      <div>
-        <h3 class="text-2xl font-bold mb-8 text-purple-400" data-i18n="online_workshops">Online Workshops</h3>
-        <div class="max-w-2xl mx-auto">
-          
-          <!-- Workshop 3: Science Citizenship -->
+    <!-- SPEAKERS SECTION -->
+    <section id="speakers" class="py-16 bg-transparent">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2
+            class="title-font text-5xl font-bold mt-4"
+            data-i18n="speakers_title"
+          >
+            Inspiring Voices from Earth &amp; Beyond
+          </h2>
+          <p class="text-xl mt-4 max-w-2xl mx-auto" data-i18n="speakers_desc">
+            Meet the experts, explorers, and visionaries joining us in-person
+            and online
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Speaker 3 -->
           <div class="speaker-card border border-white/10 rounded-3xl p-6">
             <div class="flex justify-center mb-6">
-              <div class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online">
-                <img src="./src/assets/webp/mohamed_workshop.webp" alt="Mohamed Zeyada" class="w-full h-full object-cover">
+              <div
+                class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-presentiel"
+              >
+                <img
+                  src="./src/assets/webp/sofien.webp"
+                  alt="Dr. Sofien Kamoun"
+                  class="w-full h-full object-cover"
+                />
               </div>
             </div>
             <div class="text-center">
-              <div class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3" data-i18n="online_workshop">Online Workshop</div>
-              <h3 class="font-semibold text-2xl" data-i18n="workshop3_name">Mohamed Zeyada, Egypt</h3>
-              <p class="text-red-400 text-lg" data-i18n="workshop3_title">Science Citizenship</p>
-              <p class="text-sm text-gray-400 mt-4" data-i18n="workshop3_desc">Learn how citizen science initiatives democratize space exploration and make scientific discovery accessible to everyone.</p>
-              <div class="flex flex-col items-center justify-center mt-4">
-                <div class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center border border-white/30">
-                <span class="text-4xl"><img src="./src/assets/webp/partner2.webp" alt="Cassiopea" class="h-16 object-contain"></span>
+              <div
+                class="inline-block bg-emerald-400 text-black text-xs font-bold px-4 py-1 rounded-3xl mb-3"
+                data-i18n="in_person_guest"
+              >
+                IN-PERSON • PRÉSENTIEL
               </div>
-                <p class="text-gray-500 text-xs mt-2" data-i18n="workshop3_org">Organized by Cassiopea</p>
+              <h3 class="font-semibold text-2xl" data-i18n="speaker3_name">
+                Dr. Sofien Kamoun, Tunisia
+              </h3>
+              <p class="text-red-400 text-lg" data-i18n="speaker3_desc">
+                President, Astronomical Society of Tunisia
+              </p>
+              <p class="text-sm text-gray-400 mt-4" data-i18n="speaker3_bio">
+                Leading Tunisian astronomer and passionate science communicator
+                dedicated to bringing the cosmos closer to North Africa.
+              </p>
+            </div>
+          </div>
+
+          <!-- Speaker 1 -->
+          <div class="speaker-card border border-white/10 rounded-3xl p-6">
+            <div class="flex justify-center mb-6">
+              <div
+                class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-presentiel"
+              >
+                <img
+                  src="./src/assets/webp/manuel.webp"
+                  alt="Manuel Pimenta"
+                  class="w-full h-full object-cover"
+                />
               </div>
+            </div>
+            <div class="text-center">
+              <div
+                class="inline-block bg-emerald-400 text-black text-xs font-bold px-4 py-1 rounded-3xl mb-3"
+                data-i18n="in_person_guest"
+              >
+                IN-PERSON • PRÉSENTIEL
+              </div>
+              <h3 class="font-semibold text-2xl" data-i18n="speaker1_name">
+                Manuel Pimenta, USA
+              </h3>
+              <p class="text-red-400 text-lg" data-i18n="speaker1_desc">
+                CEO &amp; Founder, Virtual Moon
+              </p>
+              <p class="text-sm text-gray-400 mt-4" data-i18n="speaker1_bio">
+                Pioneer creating the most detailed VR model of the Moon — a
+                fully immersive digital twin for STEM education and lunar
+                exploration preparation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Speaker 9 -->
+          <div class="speaker-card border border-white/10 rounded-3xl p-6">
+            <div class="flex justify-center mb-6">
+              <div
+                class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online"
+              >
+                <img
+                  src="./src/assets/webp/philippe.webp"
+                  alt="Philippe Van Nedervelde"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="text-center">
+              <div
+                class="inline-block bg-purple-500 text-black text-xs font-bold px-4 py-1 rounded-3xl mb-3"
+                data-i18n="virtual_guest"
+              >
+                Virtual Guest
+              </div>
+              <h3 class="font-semibold text-2xl" data-i18n="speaker9_name">
+                Philippe Van Nedervelde, USA
+              </h3>
+              <p class="text-red-400 text-lg" data-i18n="speaker9_desc">
+                VR Architect, Virtual Moon
+              </p>
+              <p class="text-sm text-gray-400 mt-4" data-i18n="speaker9_bio">
+                A futurist, transhumanist writer, activist and speaker. VR
+                pioneer, former European Director of the Foresight Institute,
+                and nanotechnology policy expert
+              </p>
+            </div>
+          </div>
+
+          <!-- Speaker 6 -->
+          <div class="speaker-card border border-white/10 rounded-3xl p-6">
+            <div class="flex justify-center mb-6">
+              <div
+                class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online"
+              >
+                <img
+                  src="./src/assets/webp/hoffman.webp"
+                  alt="Dr. Jeffrey A. Hoffman"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="text-center">
+              <div
+                class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3"
+                data-i18n="virtual_guest"
+              >
+                Virtual Guest
+              </div>
+              <h3 class="font-semibold text-2xl">
+                Dr. Jeffrey A. Hoffman, USA
+              </h3>
+              <p class="text-red-400 text-lg" data-i18n="speaker6_desc">
+                Former NASA Astronaut &amp; MIT Professor
+              </p>
+              <p class="text-sm text-gray-400 mt-4" data-i18n="speaker6_bio">
+                Veteran of five Space Shuttle missions, including the first
+                Hubble Space Telescope repair. Professor of Aeronautics &amp;
+                Astronautics at MIT.
+              </p>
+            </div>
+          </div>
+
+          <!-- Speaker 5 -->
+          <div class="speaker-card border border-white/10 rounded-3xl p-6">
+            <div class="flex justify-center mb-6">
+              <div
+                class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online"
+              >
+                <img
+                  src="./src/assets/webp/andrew.webp"
+                  alt="Andrew L. Chaikin"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="text-center">
+              <div
+                class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3"
+                data-i18n="virtual_guest"
+              >
+                Virtual Guest
+              </div>
+              <h3 class="font-semibold text-2xl" data-i18n="speaker5_name">
+                Andrew L. Chaikin, USA
+              </h3>
+              <p class="text-red-400 text-lg" data-i18n="speaker5_desc">
+                Renowned Apollo Historian &amp; Author
+              </p>
+              <p class="text-sm text-gray-400 mt-4" data-i18n="speaker5_bio">
+                Author of the definitive book
+                <span class="italic">"A Man on the Moon"</span>. One of the
+                world's leading historians of the Apollo program.
+              </p>
+            </div>
+          </div>
+
+          <!-- Speaker 2 -->
+          <div class="speaker-card border border-white/10 rounded-3xl p-6">
+            <div class="flex justify-center mb-6">
+              <div
+                class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online"
+              >
+                <img
+                  src="./src/assets/webp/jason.webp"
+                  alt="Jason Michaud"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="text-center">
+              <div
+                class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3"
+                data-i18n="virtual_guest"
+              >
+                Virtual Guest
+              </div>
+              <h3 class="font-semibold text-2xl" data-i18n="speaker2_name">
+                Jason Michaud, Canada
+              </h3>
+              <p class="text-red-400 text-lg" data-i18n="speaker2_desc">
+                CEO & Founder, Stardust
+              </p>
+              <p class="text-sm text-gray-400 mt-4" data-i18n="speaker2_bio">
+                Leader of global initiatives in space education, innovation, and
+                workforce development. Making space accessible to all dreamers.
+              </p>
+            </div>
+          </div>
+
+          <!-- Speaker 4 -->
+          <div class="speaker-card border border-white/10 rounded-3xl p-6">
+            <div class="flex justify-center mb-6">
+              <div
+                class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online"
+              >
+                <img
+                  src="./src/assets/webp/abraham.webp"
+                  alt="Abraham Oludare"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="text-center">
+              <div
+                class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3"
+                data-i18n="virtual_guest"
+              >
+                Virtual Guest
+              </div>
+              <h3 class="font-semibold text-2xl" data-i18n="speaker4_name">
+                Abraham Babarinde, Nigeria
+              </h3>
+              <p class="text-red-400 text-lg" data-i18n="speaker4_desc">
+                Industrial &amp; Production Engineer
+              </p>
+              <p class="text-sm text-gray-400 mt-4" data-i18n="speaker4_bio">
+                Expert in industrial engineering contributing innovative
+                perspectives on the practical challenges of space accessibility
+                and production systems.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- FINAL CTA -->
-  <section class="bg-white/10 backdrop-blur-xl py-20 border-t border-white/10 relative">
-    <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
-      <h2 class="title-font text-5xl font-bold mb-6" data-i18n="cta_title">The Universe is calling.<br>Will you answer?</h2>
-      <a href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__igo3o5UNFpFQTRHR1ZXN0dMQU1MVDU5QUdYSVFXMC4u" 
-         target="_blank"
-         class="button inline-flex items-center button bg-gradient-to-r from-red-500 to-red-800 hover:from-red-600 hover:to-red-700 text-white font-bold text-2xl px-14 py-7 rounded-3xl transition-all hover:scale-105">
-        <span data-i18n="cta_register">INSCRIVEZ-VOUS →</span>
-      </a>
-      <p class="mt-8 text-gray-400" data-i18n="cta_location">Université Centrale Collective Lab (Polytech School) • Tunis, Tunisia</p>
-      <p class="text-xs text-gray-500 mt-2" data-i18n="cta_contact">quasarnexus.uc@gmail.com • Live-streaming available</p>
-    </div>
-  </section>
-
-  <!-- EVENT LOCATION MAP -->
-  <section id="location" class="py-16 bg-transparent border-t border-white/10">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-12">
-        <h2 class="title-font text-5xl font-bold mt-4" data-i18n="location_title">Event Location</h2>
-        <p class="text-xl mt-4" data-i18n="location_desc">Join us at Université Centrale Collective Lab in Tunis</p>
-      </div>
-
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <!-- Map -->
-        <div class="rounded-3xl overflow-hidden shadow-2xl border border-white/10 h-96">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250.05475340307424!2d10.183024758384747!3d36.817403717216365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd348817c4e08f%3A0xc2c946f3814af467!2sCentral%20University%20Tunisia!5e1!3m2!1sen!2sad!4v1777756739690!5m2!1sen!2sad" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- RECORDED PRESENTATIONS -->
+    <section class="py-16 bg-transparent border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2
+            class="title-font text-5xl font-bold mt-4"
+            data-i18n="recorded_title"
+          >
+            Recorded Presentations
+          </h2>
+          <p class="text-xl mt-4 max-w-2xl mx-auto" data-i18n="recorded_desc">
+            Special featured presentations available as recordings
+          </p>
         </div>
 
-        <!-- Location Details -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto"
+        >
+          <!-- Speaker 7 -->
+          <div class="speaker-card border border-white/10 rounded-3xl p-6">
+            <div class="flex justify-center mb-6">
+              <div
+                class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online"
+              >
+                <img
+                  src="./src/assets/webp/alejandra.webp"
+                  alt="Alejandra Islas"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="text-center">
+              <div
+                class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3"
+                data-i18n="recorded_guest"
+              >
+                Virtual Guest
+              </div>
+              <h3 class="font-semibold text-2xl" data-i18n="speaker7_name">
+                Alejandra Islas, Mexico
+              </h3>
+              <p class="text-red-400 text-lg" data-i18n="speaker7_desc">
+                STEM Educator &amp; Space Education Advocate
+              </p>
+            </div>
+          </div>
+
+          <!-- Speaker 8 -->
+          <div class="speaker-card border border-white/10 rounded-3xl p-6">
+            <div class="flex justify-center mb-6">
+              <div
+                class="circle-portrait w-40 h-40 rounded-full overflow-hidden border-4 border-portrait-online"
+              >
+                <img
+                  src="./src/assets/webp/amoli.webp"
+                  alt="Amoli Kakkar"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="text-center">
+              <div
+                class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3"
+                data-i18n="recorded_guest"
+              >
+                Virtual Guest
+              </div>
+              <h3 class="font-semibold text-2xl" data-i18n="speaker8_name">
+                Amoli Kakkar, India
+              </h3>
+              <p class="text-red-400 text-lg" data-i18n="speaker8_desc">
+                AAVSO Observer, Citizen Scientist, Member of SA Citizen Science
+                GROUP
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORKSHOPS -->
+    <section
+      id="workshops"
+      class="py-16 bg-transparent border-t border-white/10"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2
+            class="title-font text-5xl font-bold mt-4"
+            data-i18n="workshops_title"
+          >
+            Hands-On Workshops
+          </h2>
+          <p class="text-xl mt-4 max-w-2xl mx-auto" data-i18n="workshops_desc">
+            Immersive learning experiences designed to explore space
+            accessibility
+          </p>
+        </div>
+
+        <!-- On-Site Workshops -->
+        <div class="mb-16">
+          <h3
+            class="text-2xl font-bold mb-8 text-blue-400"
+            data-i18n="onsite_workshops"
+          >
+            On-Site Workshops
+          </h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <!-- Workshop 1: Nightsky Stargazing -->
+            <div class="speaker-card border border-white/10 rounded-3xl p-6">
+              <div class="flex justify-center mb-6">
+                <span class="text-4xl"
+                  ><div class="flex flex-col items-center justify-center mt-4">
+                    <div
+                      class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center border border-white/30"
+                    >
+                      <img
+                        src="./src/assets/webp/partner1.webp"
+                        alt="Atronomical Society of Tunisia - SAT"
+                        class="h-16 object-contain"
+                      />
+                    </div>
+                    <p
+                      class="text-center text-gray-400 text-sm mt-2"
+                      data-i18n="workshop1_org"
+                    >
+                      Organized by Astronomical Society of Tunisia - SAT
+                    </p>
+                  </div></span
+                >
+              </div>
+              <div class="text-center">
+                <div
+                  class="inline-block bg-emerald-400 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3"
+                  data-i18n="onsite_workshop"
+                >
+                  On-Site
+                </div>
+                <h3 class="font-semibold text-2xl" data-i18n="workshop1_title">
+                  Nightsky Stargazing
+                </h3>
+                <p class="text-gray-300 mt-4 mb-6" data-i18n="workshop1_desc">
+                  Learn how citizen science initiatives democratize space
+                  exploration and make scientific discovery accessible to
+                  everyone.
+                </p>
+              </div>
+            </div>
+
+            <!-- Workshop 2: Virtual Reality Moon Exploration -->
+            <div class="speaker-card border border-white/10 rounded-3xl p-6">
+              <div class="flex justify-center mb-6">
+                <span class="text-4xl"
+                  ><div class="flex flex-col items-center justify-center mt-4">
+                    <div
+                      class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center border border-white/30"
+                    >
+                      <img
+                        src="./src/assets/webp/partner5.webp"
+                        alt="Virtual Moon"
+                        class="h-16 object-contain"
+                      />
+                    </div>
+                    <p
+                      class="text-center text-gray-400 text-sm mt-2"
+                      data-i18n="workshop2_org"
+                    >
+                      Organized by Virtual Moon
+                    </p>
+                  </div></span
+                >
+              </div>
+              <div class="text-center">
+                <div
+                  class="inline-block bg-emerald-400 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3"
+                  data-i18n="onsite_workshop"
+                >
+                  On-Site
+                </div>
+                <h3 class="font-semibold text-2xl" data-i18n="workshop2_title">
+                  VR Moon Exploration
+                </h3>
+                <p class="text-gray-300 mt-4 mb-6" data-i18n="workshop2_desc">
+                  Learn how citizen science initiatives democratize space
+                  exploration and make scientific discovery accessible to
+                  everyone.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Online Workshop -->
         <div>
-          <div class="space-y-6">
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all">
-              <div class="flex items-start gap-4">
-                <div class="text-3xl venueEmoji">📍</div>
-                <div>
-                  <h3 class="text-xl font-semibold mb-2">Venue</h3>
-                  <p class="text-gray-300" data-i18n="venue_address">Université Centrale Collective Lab (Polytech)</p>
-                  <p class="text-gray-400 text-sm mt-1" data-i18n="venue_city">Tunis, Tunisia</p>
+          <h3
+            class="text-2xl font-bold mb-8 text-purple-400"
+            data-i18n="online_workshops"
+          >
+            Online Workshops
+          </h3>
+          <div class="max-w-2xl mx-auto">
+            <!-- Workshop 3: Science Citizenship -->
+            <div class="speaker-card border border-white/10 rounded-3xl p-6">
+              <div class="flex justify-center mb-6">
+                <span class="text-4xl"
+                  ><div class="flex flex-col items-center justify-center mt-4">
+                    <div
+                      class="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center border border-white/30"
+                    >
+                      <img
+                        src="./src/assets/webp/partner2.webp"
+                        alt="Cassiopea"
+                        class="h-16 object-contain"
+                      />
+                    </div>
+                    <p
+                      class="text-center text-gray-400 text-sm mt-2"
+                      data-i18n="workshop3_org"
+                    >
+                      Organized by Cassiopea
+                    </p>
+                  </div></span
+                >
+              </div>
+              <div class="text-center">
+                <div
+                  class="inline-block bg-purple-500 text-white text-xs font-bold px-4 py-1 rounded-3xl mb-3"
+                  data-i18n="online_workshop"
+                >
+                  Online Workshop
                 </div>
+                <h3 class="font-semibold text-2xl" data-i18n="workshop3_title">
+                  Science Citizenship
+                </h3>
+                <p class="text-red-400 text-lg mt-4" data-i18n="workshop3_name">
+                  Presented by Mohamed Zeyada
+                </p>
+                <p
+                  class="text-gray-400 text-sm mb-6"
+                  data-i18n="workshop3_pres_desc"
+                >
+                  Communications Engineer, TSI Astronaut Candidate, First
+                  Egyptian Virtual Analog Astronaut, and Founder of the
+                  Cassiopeia Initiative for Space and Astronomy Education.
+                </p>
+                <p class="text-gray-300 mt-4 mb-6" data-i18n="workshop3_desc">
+                  <br />
+                  Learn how citizen science initiatives like asteroid surveying
+                  democratize space exploration and make scientific discovery
+                  accessible to everyone.
+                </p>
               </div>
             </div>
-
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all">
-              <div class="flex items-start gap-4">
-                <div class="text-3xl venueEmoji">📅</div>
-                <div>
-                  <h3 class="text-xl font-semibold mb-2" data-i18n="date_title">Date &amp; Time</h3>
-                  <p class="text-gray-300" data-i18n="event_date">May 6th, 2026</p>
-                  <p class="text-gray-400 text-sm mt-1" data-i18n="event_time">2:00 PM - 6:00 PM (Local Time)</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all">
-              <div class="flex items-start gap-4">
-                <div class="text-3xl venueEmoji">🚌</div>
-                <div>
-                  <h3 class="text-xl font-semibold mb-2" data-i18n="transport_title">Getting There</h3>
-                  <p class="text-gray-300" data-i18n="transport_desc">Easily accessible by public transport</p>
-                  <p class="text-gray-400 text-sm mt-1" data-i18n="parking_desc">Parking available on campus</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- PARTNERS -->
-  <section id="partners" class="py-16 bg-transparent border-t border-white/10">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-16">
-        <h2 class="title-font text-5xl font-bold mt-4" data-i18n="partners_title">Our Partners</h2>
-        <p class="text-xl mt-4 max-w-2xl mx-auto" data-i18n="partners_desc">Making space accessibility possible through collaboration</p>
-      </div>
-
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-6xl mx-auto">
-        
-        <!-- Partner 1 -->
-        <div class="text-center">
-          <div class="flex flex-col items-center justify-center bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all backdrop-blur-sm mb-3">
-            <img src="./src/assets/webp/partner1.webp" alt="Astronomical Society of Tunisia - SAT" class="h-16 object-contain">
-          </div>
-          <p class="text-gray-300 font-medium text-sm" data-i18n="partner1_name">Partner 1</p>
-        </div>
-
-        <!-- Partner 2 -->
-        <div class="text-center">
-          <div class="flex flex-col items-center justify-center bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all backdrop-blur-sm mb-3">
-            <img src="./src/assets/webp/partner2.webp" alt="Cassiopea" class="h-16 object-contain">
-          </div>
-          <p class="text-gray-300 font-medium text-sm" data-i18n="partner2_name">Partner 2</p>
-        </div>
-
-        <!-- Partner 3 -->
-        <div class="text-center">
-          <div class="flex flex-col items-center justify-center bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all backdrop-blur-sm mb-3">
-            <img src="./src/assets/webp/partner3.webp" alt="City of Science" class="h-16 object-contain">
-          </div>
-          <p class="text-gray-300 font-medium text-sm" data-i18n="partner3_name">Partner 3</p>
-        </div>
-
-        <!-- Partner 4 -->
-        <div class="text-center">
-          <div class="flex flex-col items-center justify-center bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all backdrop-blur-sm mb-3">
-            <img src="./src/assets/webp/partner4.webp" alt="Stardust" class="h-16 object-contain">
-          </div>
-          <p class="text-gray-300 font-medium text-sm" data-i18n="partner4_name">Partner 4</p>
-        </div>
-
-        <!-- Partner 5 -->
-        <div class="text-center">
-          <div class="flex flex-col items-center justify-center bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all backdrop-blur-sm mb-3">
-            <img src="./src/assets/webp/partner5.webp" alt="Virtual Moon" class="h-16 object-contain">
-          </div>
-          <p class="text-gray-300 font-medium text-sm" data-i18n="partner5_name">Partner 5</p>
-        </div>
-
-        <!-- Partner 6 -->
-        <div class="text-center">
-          <div class="flex flex-col items-center justify-center bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-all backdrop-blur-sm mb-3">
-            <img src="./src/assets/webp/partner6.webp" alt="International Picture Production" class="h-16 object-contain">
-          </div>
-          <p class="text-gray-300 font-medium text-sm" data-i18n="partner6_name">Partner 6</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT US -->
-  <section id="about" class="py-20 bg-white/10 backdrop-blur-xl border-t border-white/10 relative">
-    <div class="absolute right-0 top-0 bottom-0 flex pointer-events-none">
-      <img src="./src/assets/webp/quasarlogo.webp" alt="Quasar Nexus" class="quasar-logo object-contain">
-    </div>
-    
-    <div class="max-w-4xl mx-auto px-6 relative z-10">
-      <div class="mb-12">
-        <span class="px-6 py-2 bg-white/10 text-sm uppercase tracking-widest rounded-3xl border border-white/20" data-i18n="about_badge">About Us</span>
-        <h2 class="title-font text-5xl font-bold mt-8" data-i18n="about_title">About Quasar Nexus</h2>
-        <p class="text-xl mt-6 text-gray-300 max-w-2xl" data-i18n="about_desc">Our mission is to democratize access to space knowledge within our university by creating opportunities for learning, experimentation, and collaboration. We strive to inspire diverse talents, nurture innovation, and shape future pioneers in the space sector.</p>
-      </div>
-      
-      <div class="grid md:grid-cols-3 gap-8 mt-12">
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all">
-          <div class="text-4xl mb-4">🎓</div>
-          <h3 class="text-xl font-semibold mb-3" data-i18n="about_learning">Learning & Education</h3>
-          <p class="text-gray-400" data-i18n="about_learning_desc">Sharing knowledge about astronomy, space exploration, and cutting-edge technologies</p>
-        </div>
-        
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all">
-          <div class="text-4xl mb-4">🔬</div>
-          <h3 class="text-xl font-semibold mb-3" data-i18n="about_innovation">Innovation & Research</h3>
-          <p class="text-gray-400" data-i18n="about_innovation_desc">Fostering experimentation and collaboration to push boundaries in space science</p>
-        </div>
-        
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all">
-          <div class="text-4xl mb-4">🚀</div>
-          <h3 class="text-xl font-semibold mb-3" data-i18n="about_future">Future Pioneers</h3>
-          <p class="text-gray-400" data-i18n="about_future_desc">Inspiring and nurturing the next generation of space industry leaders</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT FORM -->
-  <section id="contact" class="py-16 bg-black border-t border-white/10 relative">
-    
-    <div class="max-w-3xl mx-auto px-6 relative z-10">
-      <div class="text-center mb-12">
-        <h2 class="title-font text-5xl font-bold mt-4" data-i18n="contact_title">Contact the Club</h2>
-        <p class="text-xl mt-4" data-i18n="contact_desc">Have questions? Send us a message and we'll get back to you soon</p>
-      </div>
-
-      <!-- Primary Contact Method: Instagram -->
-      <div class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-400/20 rounded-2xl p-8 mb-8 text-center">
-        <a href="https://www.instagram.com/quasar_nexus.uc/" target="_blank" class="inline-flex items-center text-pink-400 hover:text-pink-300 text-lg font-semibold gap-3 transition-colors">
-          <img src="./src/assets/webp/instagram.webp" alt="Instagram" class="w-12 h-12 object-contain">
-          <span data-i18n="instagram_link">Follow us on Instagram</span>
-          <span>→</span>
+    <!-- FINAL CTA -->
+    <section
+      class="bg-white/10 backdrop-blur-xl py-20 border-t border-white/10 relative"
+    >
+      <div class="max-w-4xl mx-auto text-center px-6 relative z-10">
+        <h2 class="title-font text-5xl font-bold mb-6" data-i18n="cta_title">
+          The Universe is calling.<br />Will you answer?
+        </h2>
+        <a
+          href="https://forms.office.com/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__igo3o5UNFpFQTRHR1ZXN0dMQU1MVDU5QUdYSVFXMC4u"
+          target="_blank"
+          class="button inline-flex items-center button bg-gradient-to-r from-red-500 to-red-800 hover:from-red-600 hover:to-red-700 text-white font-bold text-2xl px-14 py-7 rounded-3xl transition-all hover:scale-105"
+        >
+          <span data-i18n="cta_register">INSCRIVEZ-VOUS →</span>
         </a>
+        <p class="mt-8 text-gray-400" data-i18n="cta_location">
+          Université Centrale Collective Lab (Polytech School) • Tunis, Tunisia
+        </p>
+        <p class="text-xs text-gray-500 mt-2" data-i18n="cta_contact">
+          quasarnexus.uc@gmail.com • Live-streaming available
+        </p>
+      </div>
+    </section>
+
+    <!-- EVENT LOCATION MAP -->
+    <section
+      id="location"
+      class="py-16 bg-transparent border-t border-white/10"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2
+            class="title-font text-5xl font-bold mt-4"
+            data-i18n="location_title"
+          >
+            Event Location
+          </h2>
+          <p class="text-xl mt-4" data-i18n="location_desc">
+            Join us at Université Centrale Collective Lab in Tunis
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Map -->
+          <div
+            class="rounded-3xl overflow-hidden shadow-2xl border border-white/10 h-96"
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d250.05475340307424!2d10.183024758384747!3d36.817403717216365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd348817c4e08f%3A0xc2c946f3814af467!2sCentral%20University%20Tunisia!5e1!3m2!1sen!2sad!4v1777756739690!5m2!1sen!2sad"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+
+          <!-- Location Details -->
+          <div>
+            <div class="space-y-6">
+              <div
+                class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all"
+              >
+                <div class="flex items-start gap-4">
+                  <div class="text-3xl venueEmoji">📍</div>
+                  <div>
+                    <h3 class="text-xl font-semibold mb-2">Venue</h3>
+                    <p class="text-gray-300" data-i18n="venue_address">
+                      Université Centrale Collective Lab (Polytech)
+                    </p>
+                    <p
+                      class="text-gray-400 text-sm mt-1"
+                      data-i18n="venue_city"
+                    >
+                      Tunis, Tunisia
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all"
+              >
+                <div class="flex items-start gap-4">
+                  <div class="text-3xl venueEmoji">📅</div>
+                  <div>
+                    <h3
+                      class="text-xl font-semibold mb-2"
+                      data-i18n="date_title"
+                    >
+                      Date &amp; Time
+                    </h3>
+                    <p class="text-gray-300" data-i18n="event_date">
+                      May 6th, 2026
+                    </p>
+                    <p
+                      class="text-gray-400 text-sm mt-1"
+                      data-i18n="event_time"
+                    >
+                      2:00 PM - 6:00 PM (Local Time)
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all"
+              >
+                <div class="flex items-start gap-4">
+                  <div class="text-3xl venueEmoji">🚌</div>
+                  <div>
+                    <h3
+                      class="text-xl font-semibold mb-2"
+                      data-i18n="transport_title"
+                    >
+                      Getting There
+                    </h3>
+                    <p class="text-gray-300" data-i18n="transport_desc">
+                      Easily accessible by public transport
+                    </p>
+                    <p
+                      class="text-gray-400 text-sm mt-1"
+                      data-i18n="parking_desc"
+                    >
+                      Parking available on campus
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERS -->
+    <section
+      id="partners"
+      class="py-16 bg-transparent border-t border-white/10"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2
+            class="title-font text-5xl font-bold mt-4"
+            data-i18n="partners_title"
+          >
+            Our Partners
+          </h2>
+          <p class="text-xl mt-4 max-w-2xl mx-auto" data-i18n="partners_desc">
+            Making space accessibility possible through collaboration
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-6xl mx-auto"
+        >
+          <!-- Partner 1 -->
+          <div class="text-center">
+            <div
+              class="flex flex-col items-center justify-center bg-white/5 border border-white/10 rounded-2xl p-1 hover:bg-white/10 transition-all backdrop-blur-sm mb-3"
+            >
+              <img
+                src="./src/assets/webp/partner1.webp"
+                alt="Astronomical Society of Tunisia - SAT"
+                class="h-24 object-contain"
+              />
+            </div>
+            <p
+              class="text-gray-300 font-medium text-sm"
+              data-i18n="partner1_name"
+            >
+              Partner 1
+            </p>
+          </div>
+
+          <!-- Partner 2 -->
+          <div class="text-center">
+            <div
+              class="flex flex-col items-center justify-center bg-white/5 border border-white/10 rounded-2xl p-1 hover:bg-white/10 transition-all backdrop-blur-sm mb-3"
+            >
+              <img
+                src="./src/assets/webp/partner2.webp"
+                alt="Cassiopea"
+                class="h-24 object-contain"
+              />
+            </div>
+            <p
+              class="text-gray-300 font-medium text-sm"
+              data-i18n="partner2_name"
+            >
+              Partner 2
+            </p>
+          </div>
+
+          <!-- Partner 3 -->
+          <div class="text-center">
+            <div
+              class="flex flex-col items-center justify-center bg-white/5 border border-white/10 rounded-2xl p-1 hover:bg-white/10 transition-all backdrop-blur-sm mb-3"
+            >
+              <img
+                src="./src/assets/webp/partner3.webp"
+                alt="City of Science"
+                class="h-24 object-contain"
+              />
+            </div>
+            <p
+              class="text-gray-300 font-medium text-sm"
+              data-i18n="partner3_name"
+            >
+              Partner 3
+            </p>
+          </div>
+
+          <!-- Partner 4 -->
+          <div class="text-center">
+            <div
+              class="flex flex-col items-center justify-center bg-white/5 border border-white/10 rounded-2xl p-1 hover:bg-white/10 transition-all backdrop-blur-sm mb-3"
+            >
+              <img
+                src="./src/assets/webp/partner4.webp"
+                alt="Stardust"
+                class="h-24 object-contain"
+              />
+            </div>
+            <p
+              class="text-gray-300 font-medium text-sm"
+              data-i18n="partner4_name"
+            >
+              Partner 4
+            </p>
+          </div>
+
+          <!-- Partner 5 -->
+          <div class="text-center">
+            <div
+              class="flex flex-col items-center justify-center bg-white/5 border border-white/10 rounded-2xl p-1 hover:bg-white/10 transition-all backdrop-blur-sm mb-3"
+            >
+              <img
+                src="./src/assets/webp/partner5.webp"
+                alt="Virtual Moon"
+                class="h-24 object-contain"
+              />
+            </div>
+            <p
+              class="text-gray-300 font-medium text-sm"
+              data-i18n="partner5_name"
+            >
+              Partner 5
+            </p>
+          </div>
+
+          <!-- Partner 6 -->
+          <div class="text-center">
+            <div
+              class="flex flex-col items-center justify-center bg-white/5 border border-white/10 rounded-2xl p-1 hover:bg-white/10 transition-all backdrop-blur-sm mb-3"
+            >
+              <img
+                src="./src/assets/webp/partner6.webp"
+                alt="International Picture Production"
+                class="h-24 object-contain"
+              />
+            </div>
+            <p
+              class="text-gray-300 font-medium text-sm"
+              data-i18n="partner6_name"
+            >
+              Partner 6
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section
+      id="about"
+      class="py-20 bg-white/10 backdrop-blur-xl border-t border-white/10 relative"
+    >
+      <div class="absolute right-0 top-0 bottom-0 flex pointer-events-none">
+        <img
+          src="./src/assets/webp/quasarlogo.webp"
+          alt="Quasar Nexus"
+          class="quasar-logo object-contain"
+        />
       </div>
 
-      <form id="contactForm" class="space-y-8 mt-8 p-10 bg-white/5 backdrop-blur-sm border rounded-3xl">
-        <!-- Name Field -->
-        <div>
-          <label for="name" class="block text-sm font-semibold mb-3" data-i18n="form_name">Full Name</label>
-          <input 
-            type="text" 
-            id="name" 
-            required
-            class="w-full px-6 py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-blue-400 focus:bg-white/15 transition-all"
-            placeholder="Your name" data-i18n-placeholder="form_name_placeholder">
+      <div class="max-w-4xl mx-auto px-6 relative z-10">
+        <div class="mb-12">
+          <span
+            class="px-6 py-2 bg-white/10 text-sm uppercase tracking-widest rounded-3xl border border-white/20"
+            data-i18n="about_badge"
+            >About Us</span
+          >
+          <h2
+            class="title-font text-5xl font-bold mt-8"
+            data-i18n="about_title"
+          >
+            About Quasar Nexus
+          </h2>
+          <p
+            class="text-xl mt-6 text-gray-300 max-w-2xl"
+            data-i18n="about_desc"
+          >
+            Our mission is to democratize access to space knowledge within our
+            university by creating opportunities for learning, experimentation,
+            and collaboration. We strive to inspire diverse talents, nurture
+            innovation, and shape future pioneers in the space sector.
+          </p>
         </div>
 
-        <!-- Email Field -->
-        <div>
-          <label for="email" class="block text-sm font-semibold mb-3" data-i18n="form_email">Email Address</label>
-          <input 
-            type="email" 
-            id="email" 
-            required
-            class="w-full px-6 py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-blue-400 focus:bg-white/15 transition-all"
-            placeholder="your.email@example.com" data-i18n-placeholder="form_email_placeholder">
+        <div class="grid md:grid-cols-3 gap-8 mt-12">
+          <div
+            class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all"
+          >
+            <div class="text-4xl mb-4">🎓</div>
+            <h3 class="text-xl font-semibold mb-3" data-i18n="about_learning">
+              Learning & Education
+            </h3>
+            <p class="text-gray-400" data-i18n="about_learning_desc">
+              Sharing knowledge about astronomy, space exploration, and
+              cutting-edge technologies
+            </p>
+          </div>
+
+          <div
+            class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all"
+          >
+            <div class="text-4xl mb-4">🔬</div>
+            <h3 class="text-xl font-semibold mb-3" data-i18n="about_innovation">
+              Innovation & Research
+            </h3>
+            <p class="text-gray-400" data-i18n="about_innovation_desc">
+              Fostering experimentation and collaboration to push boundaries in
+              space science
+            </p>
+          </div>
+
+          <div
+            class="bg-white/5 border border-white/10 rounded-2xl p-6 backdrop-blur-sm hover:bg-white/10 transition-all"
+          >
+            <div class="text-4xl mb-4">🚀</div>
+            <h3 class="text-xl font-semibold mb-3" data-i18n="about_future">
+              Future Pioneers
+            </h3>
+            <p class="text-gray-400" data-i18n="about_future_desc">
+              Inspiring and nurturing the next generation of space industry
+              leaders
+            </p>
+          </div>
         </div>
-
-        <!-- Subject Field -->
-        <div>
-          <label for="subject" class="block text-sm font-semibold mb-3" data-i18n="form_subject">Subject</label>
-          <input 
-            type="text" 
-            id="subject" 
-            required
-            class="w-full px-6 py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-blue-400 focus:bg-white/15 transition-all"
-            placeholder="What is this about?" data-i18n-placeholder="form_subject_placeholder">
-        </div>
-
-        <!-- Message Field -->
-        <div>
-          <label for="message" class="block text-sm font-semibold mb-3" data-i18n="form_message">Message</label>
-          <textarea 
-            id="message" 
-            required
-            rows="6"
-            class="w-full px-6 py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-blue-400 focus:bg-white/15 transition-all resize-none"
-            placeholder="Tell us what's on your mind..." data-i18n-placeholder="form_message_placeholder"></textarea>
-        </div>
-
-        <!-- Submit Button -->
-        <button 
-          type="submit"
-          class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-2xl transition-all hover:scale-105 text-lg flex items-center justify-center gap-3">
-          <span data-i18n="form_submit">Send Message</span>
-        </button>
-
-        <!-- Status Message -->
-        <p id="statusMessage" class="text-center text-sm text-gray-400 hidden"></p>
-      </form>
-
-      <div class="mt-12 text-center border-t border-white/10 pt-8">
-        <a href="mailto:quasarnexus.uc@gmail.com" class="inline-flex items-center text-blue-400 hover:text-blue-300 text-lg font-semibold gap-2 transition-colors">
-          quasarnexus.uc@gmail.com
-        </a>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="bg-black text-center py-8 text-xs text-gray-500 border-t border-white/10">
-    <span data-i18n="footer_text">Made with cosmic love for Quasar Nexus Astronomy Club • 2026</span>
-  </footer>
+    <!-- CONTACT FORM -->
+    <section
+      id="contact"
+      class="py-16 bg-black border-t border-white/10 relative"
+    >
+      <div class="max-w-3xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-12">
+          <h2
+            class="title-font text-5xl font-bold mt-4"
+            data-i18n="contact_title"
+          >
+            Contact the Club
+          </h2>
+          <p class="text-xl mt-4" data-i18n="contact_desc">
+            Have questions? Send us a message and we'll get back to you soon
+          </p>
+        </div>
 
-  <script src="./src/script.js"></script>
-</body>
+        <!-- Primary Contact Method: Instagram -->
+        <div
+          class="bg-gradient-to-r from-pink-500/10 to-purple-500/10 border border-pink-400/20 rounded-2xl p-8 mb-8 text-center"
+        >
+          <a
+            href="https://www.instagram.com/quasar_nexus.uc/"
+            target="_blank"
+            class="inline-flex items-center text-pink-400 hover:text-pink-300 text-lg font-semibold gap-3 transition-colors"
+          >
+            <img
+              src="./src/assets/webp/instagram.webp"
+              alt="Instagram"
+              class="w-12 h-12 object-contain"
+            />
+            <span data-i18n="instagram_link">Follow us on Instagram</span>
+            <span>→</span>
+          </a>
+        </div>
+
+        <form
+          id="contactForm"
+          class="space-y-8 mt-8 p-10 bg-white/5 backdrop-blur-sm border rounded-3xl"
+        >
+          <!-- Name Field -->
+          <div>
+            <label
+              for="name"
+              class="block text-sm font-semibold mb-3"
+              data-i18n="form_name"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              required
+              class="w-full px-6 py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-blue-400 focus:bg-white/15 transition-all"
+              placeholder="Your name"
+              data-i18n-placeholder="form_name_placeholder"
+            />
+          </div>
+
+          <!-- Email Field -->
+          <div>
+            <label
+              for="email"
+              class="block text-sm font-semibold mb-3"
+              data-i18n="form_email"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email"
+              required
+              class="w-full px-6 py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-blue-400 focus:bg-white/15 transition-all"
+              placeholder="your.email@example.com"
+              data-i18n-placeholder="form_email_placeholder"
+            />
+          </div>
+
+          <!-- Subject Field -->
+          <div>
+            <label
+              for="subject"
+              class="block text-sm font-semibold mb-3"
+              data-i18n="form_subject"
+              >Subject</label
+            >
+            <input
+              type="text"
+              id="subject"
+              required
+              class="w-full px-6 py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-blue-400 focus:bg-white/15 transition-all"
+              placeholder="What is this about?"
+              data-i18n-placeholder="form_subject_placeholder"
+            />
+          </div>
+
+          <!-- Message Field -->
+          <div>
+            <label
+              for="message"
+              class="block text-sm font-semibold mb-3"
+              data-i18n="form_message"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              required
+              rows="6"
+              class="w-full px-6 py-4 bg-white/10 border border-white/20 rounded-2xl text-white placeholder-gray-500 focus:outline-none focus:border-blue-400 focus:bg-white/15 transition-all resize-none"
+              placeholder="Tell us what's on your mind..."
+              data-i18n-placeholder="form_message_placeholder"
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            class="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-2xl transition-all hover:scale-105 text-lg flex items-center justify-center gap-3"
+          >
+            <span data-i18n="form_submit">Send Message</span>
+          </button>
+
+          <!-- Status Message -->
+          <p
+            id="statusMessage"
+            class="text-center text-sm text-gray-400 hidden"
+          ></p>
+        </form>
+
+        <div class="mt-12 text-center border-t border-white/10 pt-8">
+          <a
+            href="mailto:quasarnexus.uc@gmail.com"
+            class="inline-flex items-center text-blue-400 hover:text-blue-300 text-lg font-semibold gap-2 transition-colors"
+          >
+            quasarnexus.uc@gmail.com
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-black text-center py-8 text-xs text-gray-500 border-t border-white/10"
+    >
+      <span data-i18n="footer_text"
+        >Made with cosmic love for Quasar Nexus Astronomy Club • 2026</span
+      >
+    </footer>
+
+    <script src="./src/script.js"></script>
+  </body>
 </html>
