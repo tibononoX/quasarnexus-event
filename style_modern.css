@@ -16,6 +16,12 @@ body {
   font-size: 80px;
 }
 
+.isDisabled {
+  color: currentColor;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
 .highlights {
   justify-content: space-between;
   display: flex;
