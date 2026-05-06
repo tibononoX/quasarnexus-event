@@ -1,0 +1,325 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body { 
+  font-family: 'Inter', system_ui, sans-serif; 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0;
+}
+
+.title-font { 
+  font-family: 'Space Grotesk', sans-serif; 
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  font-size: 80px;
+}
+
+.highlights {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-bg {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.cta-bg {
+  background: linear-gradient(180deg, rgba(0, 0, 20, 0.9) 0%, rgba(10, 10, 46, 0.85) 50%, rgba(0, 0, 30, 0.9) 100%),
+              radial-gradient(circle at 50% 30%, rgba(120, 80, 255, 0.2) 0%, transparent 70%);
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.cta-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(147, 51, 234, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(59, 130, 246, 0.06) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.separator {background-color: rgb(36, 36, 56);}
+
+.star-field {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent url('./src/assets/webp/background.webp') no-repeat center center;
+  background-size: cover;
+  opacity: 0.65;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  cursor: pointer;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.button:hover::before {
+  left: 100%;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 15px 35px rgba(59, 130, 246, 0.35);
+}
+
+.button:active {
+  transform: translateY(0);
+}
+
+.speaker-card {
+background: rgba(255, 255, 255, 0.1) !important;  backdrop-filter: blur(8px);
+  border: 1px solid rgba(147, 51, 234, 0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.speaker-card:hover {
+  border-color: rgba(147, 51, 234, 0.3);
+  background: rgba(24, 24, 55, 0.7);
+}
+
+.circle-portrait {
+  border: 4px solid rgba(147, 51, 234, 0.3);
+  box-shadow: 0 0 20px rgba(147, 51, 234, 0.15);
+  transition: all 0.3s ease;
+}
+
+input, textarea {
+  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(147, 51, 234, 0.15) !important;
+  padding: 1rem 1.5rem !important;
+}
+
+input:focus, textarea:focus {
+  background: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 0 1px rgba(147, 51, 234, 0.4);
+  border-color: rgba(147, 51, 234, 0.4) !important;
+}
+
+#contactForm {
+  margin-top: 2rem;
+  padding: 2.5rem;
+  background: rgba(147, 51, 234, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid #801e1c;
+  border-radius: 1.5rem;
+}
+
+#contactForm > div {
+  margin-bottom: 0;
+}
+
+#contactForm label {
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  margin-bottom: 0.75rem !important;
+  display: block;
+}
+
+#contactForm button {
+  background: linear-gradient(135deg, #3b82f6 0%, #9333ea 100%);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+}
+
+#contactForm button:hover {
+  box-shadow: 0 8px 24px rgba(147, 51, 234, 0.3);
+}
+
+#contactForm button:active {
+  transform: scale(0.98);
+}
+
+iframe {
+  transition: all 0.3s ease;
+  box-shadow: 0 15px 35px rgba(147, 51, 234, 0.15);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1 {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+h2 {
+  background: white;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-white\/5 {
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.bg-white\/10 {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.border-portrait-presentiel {
+  border-color: #4ade80 !important;
+}
+
+.border-portrait-online {
+  border-color: #a855f7  !important;
+}
+
+.border-portrait-recorded {
+  border-color: rgb(239 68 68 / var(--tw-bg-opacity, 1))  !important;
+}
+
+.shadow-2xl {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 80px rgba(147, 51, 234, 0.1) !important;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+section {
+  position: relative;
+}
+
+.bg-black {
+  background: #000000;
+}
+
+.bg-zinc-950 {
+  background: #09090b;
+}
+
+a {
+  transition: all 0.2s ease;
+}
+
+.inline-block.bg-emerald-400 {
+  background: #4ade80 !important;
+  color: #000000;
+}
+
+.inline-block.bg-purple-500 {
+  background: #a855f7 !important;
+  color: #ffffff;
+}
+
+.border-white\/10 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.border-white\/20 {
+  border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.border-white\/30 {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.text-gray-400 {
+  color: #a1a1aa;
+}
+
+.text-blue-200 {
+  color: #bfdbfe;
+}
+
+.text-blue-400 {
+  color: #60a5fa;
+}
+
+p {
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+}
+
+.space-y-6 > div {
+  border-color: rgba(234, 51, 51, 0.3) !important;
+  border-width: 2px;
+}
+
+.lang-btn {
+  border: 1px solid #c51816;
+  transition: all 0.2s ease;
+}
+
+.lang-btn.active {
+  background: rgba(234, 51, 51, 0.3) !important;
+  border-color: rgba(234, 51, 51, 0.5) !important;
+  box-shadow: 0 0 12px rgba(147, 51, 234, 0.2);
+}
+
+.venueEmoji {
+  width: 42px; 
+  text-align: center;
+}
+
+.quasar-logo {
+    margin-top: 0rem;
+    height: 16rem;
+  }
+
+
+@media (max-width: 768px) {
+  .title-font { 
+  font-size: 12vw;
+}
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.875rem;
+  }
+
+  .quasar-logo {
+    margin-top: 0rem;
+    height: 6rem;
+  }
+}
